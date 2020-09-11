@@ -60,12 +60,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** -responsive-
 
-**Je opdracht:** -Carstens Amsterdam, -
+**Je opdracht:** https://www.freshcotton.com/nl/
 
 **Screenshot(s):**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/breakdown-schets.png)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/intake/breakdown-schets.png)
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/screenshot.png)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/intake/screenshot.png)
