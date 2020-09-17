@@ -2,4 +2,552 @@
 *, *::after, *::before {
   box-sizing:border-box;  
 }
+/* AANGEPAST OM MAKKELIJKER MEE TE WERKEN*/
+html {
+  vh: auto;
+}
 
+
+body {
+  width: auto;
+  margin:0;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  font-family: karla;
+  vh: 10000;
+  
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+
+  list-style: none;
+}
+
+
+/* header navigatie */
+
+header nav {
+  top:0;
+  height: 50px;
+  margin: 0;
+  flex-grow: 1;
+  
+}
+
+
+/*container*/
+header nav ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  max-height: 50px;
+  display: flex;
+  align-items: space-between;
+  
+}
+/*logo*/
+header nav li:nth-of-type(2) {
+  flex-grow: 1;
+  min-width: 50%;
+  justify-content: center;
+  
+}
+
+header nav li {
+  flex-grow: 1;
+  max-width: 6em;
+  height: 50px;
+  margin-left: 8px;
+  margin-right: 8px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 0px;
+  
+}
+
+header nav a {
+
+  width: auto;
+  height: 24px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+
+/* MENU */
+header nav button {
+  background-color: white;
+  border: none;
+  height: 30px;
+  width: 100px;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  max-width: 6em;
+}
+
+header nav button img {
+  margin: 0;
+}
+
+header nav img {
+
+  width: auto;
+  margin: auto;
+  padding: 2px;
+  height: 30px;
+  vertical-align: middle;
+  display: flex;
+}
+
+
+/* main */
+
+
+/* bestel info */
+main section:first-child ul {
+
+  display: flex;
+  background: #f8f8f8;
+  color: #999;
+  flex-direction: row;
+  font-size:.50em;
+  font-weight: 400;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  margin: .5rem;
+ 
+
+}
+
+main section:first-child li {
+
+align-items: center;
+justify-content: center;
+margin-right: .5em;
+margin-left: .5em;
+
+}
+
+main section:first-child img {
+
+  padding: .1em;
+  align-items: baseline;
+  width: 1em;
+  max-height: 1em;
+  margin-right: 0.5em;
+
+}
+
+
+/* main images */
+
+main section:nth-child(2) ul {
+
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 8px;
+
+}
+
+/* Speciaal voor jou geselecteerd */
+
+/* Titel */
+h2 {
+
+    font-size: .875em;
+    font-weight: 700;
+    color: #212529;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+/* Container */
+main section:nth-of-type(3) ul {
+  display:flex;
+  flex-wrap:wrap;
+  padding: 0em .5em;
+}
+
+/* list item breedte gegeven van 50% waardoor ze in combinatie met de flexwrap over 2 regels vallen */
+main section:nth-of-type(3) li {
+  flex-basis:50%;
+  padding: .357em;
+  margin: 0em 0em 1em 0em;
+}
+
+main section:nth-of-type(3) a {
+  text-decoration: none;
+}
+
+main section:nth-of-type(3) h3 {
+  margin: .357em 0em 0em;
+  color: #000000;
+  font-size: 1em;
+}
+
+main section:nth-of-type(3) p {
+  
+  color: #000000;
+  font-size: .875em;
+  margin: 0px;
+
+}
+
+/* Vierde section met merkcategorieen */
+
+/* eerste ul voor afbeelding over de breedte van het scherm */
+main section:nth-of-type(4) ul:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .5em 1em;
+  margin: 0px;
+
+}
+
+/* tweede ul om er 4 over 2 regels weer te geven */
+/* container */
+main section:nth-of-type(4) ul:nth-child(2)  {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0em .5em;
+  margin: 0em;
+}
+
+main section:nth-of-type(4) ul:nth-child(2) li {
+  flex-basis: 50%;
+  padding: .357em;
+  margin: 0em;
+}
+
+/* Recente blogposts / section 5 */
+
+main section:nth-of-type(5) {
+  margin: 0;
+  padding: 0;
+}
+
+main section:nth-of-type(5) ul {
+  margin: 0;
+  padding:0;
+}
+
+main section:nth-of-type(5) li {
+  margin: 1.5em 0em 0em 0em;
+  padding:0.5em;
+
+}
+
+main section:nth-of-type(5) a {
+  text-decoration: none;
+}
+
+main section:nth-of-type(5) img {
+  height: auto;
+  margin: .5em;
+}
+
+main section:nth-of-type(5) h4 {
+  font-size: 0.750em;
+  color: #999999;
+  margin: 0em 0.5em;
+  padding:0;
+}
+
+main section:nth-of-type(5) h3 {
+  font-size: 1em;
+  color: #000000;
+  margin: 0em 0.5em;
+  padding:0;
+}
+
+main section:nth-of-type(5) p {
+  font-size: 0.875em;
+  color: #212529;
+  margin: 0em 0.5em;
+  padding:0;
+  height: 88px
+  margin-bottom: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  
+}
+
+
+/* FOOTER */
+footer {
+
+  padding: 1em 0em;
+  margin: 2em .5em;
+
+}
+
+/* betaalmethoden / Section 1 */
+footer section:nth-of-type(1) {
+
+padding: 2em 1em;
+margin: 2em 1em;
+}
+
+footer section:nth-of-type(1) h2 {
+
+  text-align: center;
+
+}
+
+footer section:nth-of-type(1) ul {
+
+  display: flex;
+  background: none;
+  height:30px;
+}
+
+footer section:nth-of-type(1) li {
+
+  flex-grow: 1;
+  max-height: 30px;
+  padding:.5em;
+  margin:0px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+
+footer section:nth-of-type(1) img {
+
+  min-height: 30px;
+  max-width: 70px;
+  width: auto;
+  padding:0px;
+  margin:0px;
+}
+
+/* NIEUWSBRIEF FORM */
+
+footer section:nth-of-type(2) {
+
+  background-color: #F8F8F8;
+  
+  padding: .5em;
+}
+
+footer section:nth-of-type(2) h2 {
+
+
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  padding: 0px;
+  margin: 0.5em 0em;
+
+}
+
+footer section:nth-of-type(2) form {
+
+  margin: 0.5em 0em;
+  padding: 0.5em 0em;
+  
+}
+
+footer section:nth-of-type(2) form input {
+
+  width: width: calc(100% - 122px);;
+  min-height: 60px;
+  background-color:white;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  height: 48px;
+  color: #999;
+}
+
+footer section:nth-of-type(2) form input:nth-of-type(2) {
+  min-width: 150px;
+  margin: 0px;
+  padding: 0px;
+  height: 48px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: black;
+  letter-spacing: .5px;
+  font-weight: bold;
+
+}
+
+footer section:nth-of-type(2) form p {
+
+  margin: 0.5em 0em;
+  padding: 0.5em 0em;
+  font-size: .75em;
+
+}
+
+
+/* Lees ervaringen van een ander */
+
+footer section:nth-of-type(2) ul:first-of-type {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+margin: 0px;
+
+}
+
+footer section:nth-of-type(2) ul:first-of-type li {
+
+
+  justify-content: flex-start;
+  padding: .2em;
+  
+
+
+}
+
+footer section:nth-of-type(2) ul:first-of-type img {
+  
+  min-height: 1.25em;
+  max-width: 1.25em;
+  width: auto;
+  padding:0px;
+  margin:0px;
+}
+
+footer section:nth-of-type(2) ul:first-of-type p {
+
+  margin: 0em .5em .4em 0em;
+
+
+}
+
+footer section:nth-of-type(2) a:first-of-type {
+
+  color: black;
+  margin: 4px 0px 10px;
+  font-size:0.75em;
+}
+
+footer div:first-of-type {
+
+  width: 12em;
+  height: auto;
+  margin: 2em 0em;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(3) {
+
+
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(3) li {
+  
+  justify-content: flex-start;
+  padding: 0em;
+  align-items: center;
+  margin: 0em;
+  max-height: 40px;
+  font-size: 1em;
+  
+
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(3) img {
+  
+  max-height: 20px;
+ 
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(3) h2 {
+  margin: 0px .5em;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(4) {
+
+  margin: .5em 0em;
+}
+
+/* NEEM CONTACT OP */
+
+footer section:nth-of-type(2) ul:nth-of-type(5) {
+
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(5) li {
+
+  justify-content: flex-start;
+  padding: 0em;
+  align-items:center;
+  margin: 0em;
+  max-height: 20px;
+  font-size: 1em;
+
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(5) img {
+  
+  max-height: 20px;
+ 
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(5) h2 {
+  margin: 0px .5em;
+}
+
+/* OPTIES */
+
+footer table:first-of-type tr {
+  margin: 0em 0em 1.125em;
+  
+}
+
+footer table:first-of-type img {
+
+  max-height: 20px;
+  align-items: center;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(6) {
+
+ display: flex;
+ flex-direction: row;
+ 
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(6) li {
+
+  justify-content: flex-start;
+}
+
+footer table:nth-of-type(2) tr {
+
+  font-size:0.75em;
+}
