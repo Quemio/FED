@@ -2,21 +2,27 @@
 *, *::after, *::before {
   box-sizing:border-box;  
 }
-/* AANGEPAST OM MAKKELIJKER MEE TE WERKEN*/
+
 html {
-  vh: auto;
+
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 
 body {
-  width: auto;
+
+  width: 100%;
   margin:0;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
   font-family: karla;
-  vh: 10000;
+  left: 0;
+  top:0;
   
 }
 
@@ -33,6 +39,9 @@ li {
 /* header navigatie */
 
 header nav {
+  width: 100%;
+  left: 0;
+  top: 0;
   top:0;
   height: 50px;
   margin: 0;
@@ -44,18 +53,18 @@ header nav {
 /*container*/
 header nav ul {
   list-style: none;
-  display: flex;
-  width: 100%;
   margin: 0;
   padding: 0;
   position: fixed;
   background-color: white;
   width: 100%;
+  left: 0;
+  top: 0;
   max-height: 50px;
   display: flex;
   align-items: space-between;
-  
 }
+
 /*logo*/
 header nav li:nth-of-type(2) {
   flex-grow: 1;
@@ -286,7 +295,7 @@ main section:nth-of-type(5) p {
   color: #212529;
   margin: 0em 0.5em;
   padding:0;
-  height: 88px
+  height: 88px;
   margin-bottom: 1rem;
   font-weight: 100;
   letter-spacing: 0.5px;
@@ -371,7 +380,7 @@ footer section:nth-of-type(2) form {
 
 footer section:nth-of-type(2) form input {
 
-  width: width: calc(100% - 122px);;
+  width: calc(100% - 122px);
   min-height: 60px;
   background-color:white;
   border: none;
@@ -547,7 +556,618 @@ footer section:nth-of-type(2) ul:nth-of-type(6) li {
   justify-content: flex-start;
 }
 
-footer table:nth-of-type(2) tr {
+footer table:nth-of-type(2) td {
 
   font-size:0.75em;
+  margin-right: 1em;
+  
 }
+
+
+/* PRODUCTPAGINA */
+
+body.pp {
+
+ 
+  width: 100%;
+  margin: 0px;
+  padding: .5em;
+}
+
+/* PRODUCTAFBEELDING */
+
+/* doet raar? */
+
+body.pp section:first-of-type img {
+  
+ width: 100%;
+ margin: 0px;
+ padding: 0px;
+
+
+}
+
+body.pp section:first-of-type {
+  
+ 
+  width: 100%;
+}
+
+body.pp h5 {
+
+  color: #00a369;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+body.pp h3:first-of-type {
+
+  line-height: 1.2;
+  color: inherit;
+  font-weight: 100;
+  font-size: 1em;
+  margin: 0;
+  margin-bottom: 1em;
+  font-family: "Karla";
+  text-transform: none;
+  letter-spacing: .5px;
+}
+
+/* UPS's */
+body.pp section:first-of-type ul {
+
+  display: flex;
+  background-color: white;
+  margin: 0;
+  padding: 0px;
+  justify-content: flex-start;
+  height: 20px;
+}
+
+body.pp section:first-of-type li {
+
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+
+}
+
+body.pp section:first-of-type li p {
+  color: #00a369;
+  min-width: 18em;
+  font-size: 1em;
+  padding: 0;
+}
+
+body.pp section:first-of-type li img {
+
+max-width: 1em;
+height: auto;
+margin: 0px 5px ;
+
+}
+
+/* MAATFORM */
+
+body.pp section:first-of-type button:first-of-type {
+
+  background-color: white;
+  padding: 10.5px 14px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  border: solid .01px #E7E8E8;
+  margin: 1em 0em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+body.pp section:first-of-type button:first-of-type img {
+
+  max-width: 10px;
+}
+
+/* CTA bestellen */
+body.pp section:first-of-type form button:first-of-type {
+
+  background-color: #00a369
+
+}
+
+body.pp section:first-of-type form button:first-of-type img {
+
+  max-width: 10px;
+}
+body.pp section:first-of-type form button:first-of-type p {
+
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+/* WAT IS MIJN MAAT? */
+body.pp section:first-of-type form a {
+
+  width: 100%;
+  background-color: white;
+  padding: 10.5px 14px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  border: solid .01px #E7E8E8;
+  margin: 1em 0em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #00a369;
+  font-size: 14px;
+
+}
+
+
+/* ZET OP VERLANLIJST */body.pp section:nth-of-type(2) ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  
+}
+
+body.pp section:nth-of-type(2) li {
+  max-width: 150px;
+  height: auto;
+  margin: 0px 5px ;
+}
+
+body.pp section:nth-of-type(2) li img {
+  width: 20px;
+
+}
+
+body.pp section:nth-of-type(2) li p {
+  max-width: 150px;
+  margin: 0px;
+  font-size: 12.2px;
+}
+
+/* PLAATS JE ORDER */
+
+body.pp section:nth-of-type(2) ul:nth-of-type(2) {
+
+display: flex;
+justify-content: flex-start;
+flex-direction: row;
+align-items: center;
+
+}
+
+body.pp section:nth-of-type(2) ul:nth-of-type(2) p {
+
+  min-width: 60%;
+}
+
+body.pp section:nth-of-type(2) ul:nth-of-type(2) img {
+
+  width: 10px;
+}
+
+/* OVER DIT PRODUCT */
+body.pp section:nth-of-type(2) ul:nth-of-type(3) {
+
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+align-items: center;
+
+
+}
+
+body.pp section:nth-of-type(2) ul:nth-of-type(3) img {
+  max-width: 5px;
+}
+
+body.pp section:nth-of-type(2) ul:nth-of-type(3) li:first-of-type {
+
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .5px;
+  min-width: 200px;
+
+}
+
+/* BESTELINFO PARAGRAAF */
+body.pp section:nth-of-type(2) article p {
+
+  margin: 0px 12px;
+  color: #999999;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+
+body.pp section:nth-of-type(2) article ul {
+
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-direction: row;
+ margin: 1em 0em;
+
+}
+
+body.pp section:nth-of-type(2) article ul img {
+  max-width: 5px;
+}
+
+/* VERZENDEN EN RETOURNEREN */
+body.pp section:nth-of-type(2) article ul:nth-of-type(2) {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+ 
+}
+
+body.pp section:nth-of-type(2) article ul h4 {
+
+  margin: 0;
+  min-width: 250px;
+  font-size: 14px;
+}
+
+body.pp section:nth-of-type(2) article li:first-of-type{
+
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: .5px;
+  min-width: 200px;
+
+}
+
+/* SHARE ON WHATSAPP */
+body.pp section:nth-of-type(2) article a {
+
+  display: flex;
+  justify-content: center;
+  border: solid .1px #999999;
+  margin: 12px;
+  padding: 6px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+
+}
+
+body.pp section:nth-of-type(3) h2 {
+
+  margin-top: 1em 0em;
+
+}
+
+body.pp section:nth-of-type(3) h3 {
+
+  margin: .357em 0em 0em;
+  color: #000000;
+  font-size: 1em;
+  font-weight: 800;
+}
+
+/* FOOTER */
+
+body.pp footer {
+
+  margin: 0px;
+  background-color: #F8F8F8;
+}
+
+/* BREADCRUMB */
+
+body.pp footer section {
+
+  width: 100%;
+  margin: 2em 0em;
+  padding: 0px;
+}
+
+body.pp footer section:first-of-type ol {
+
+display: flex;
+justify-content: start;
+align-items: baseline;
+flex-wrap: wrap;
+width: 100%;
+margin: 0px;
+padding: 0px;
+font-size: 12px;
+color: #00A369;
+
+}
+
+body.pp footer section:first-of-type li {
+
+justify-content: left;
+width: auto;
+
+  
+}
+
+body.pp footer section:first-of-type li a {
+
+  text-align: left;
+}
+
+
+/* BETAALMETHODE */
+
+body.pp footer section:nth-of-type(2) {
+
+  width: 100%;
+  }
+  
+  body.pp footer section:nth-of-type(2) h2 {
+  
+    text-align: center;
+    padding: 1em;
+  
+  }
+  
+  body.pp footer section:nth-of-type(2) ul {
+  
+    display: flex;
+    background: none;
+    height:30px;
+    padding: 2em 0em;
+    width: 100%;
+    right: 0;
+  }
+  
+  body.pp footer section:nth-of-type(2) ul li {
+  
+    flex-grow: 1;
+    max-height: 30px;
+    padding: .5em;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  
+  }
+  
+  body.pp footer section:nth-of-type(2) img {
+  
+    min-height: 30px;
+    max-width: 70px;
+    width: auto;
+    padding:0px;
+    margin:0px;
+  }
+
+  /*  NIEUWSBRIEF */
+
+  body.pp footer section:nth-of-type(3) {
+
+    background-color: #F8F8F8;
+    
+    padding: .5em;
+  }
+  
+  body.pp footer section:nth-of-type(3) h2 {
+  
+  
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    padding: 0px;
+    margin: 0.5em 0em;
+  
+  }
+  
+  body.pp footer section:nth-of-type(3) form {
+  
+    margin: 0.5em 0em;
+    padding: 0.5em 0em;
+   
+    
+  }
+
+
+  
+  body.pp footer section:nth-of-type(3) form input {
+  
+    min-width: 150px;
+    min-height: 60px;
+    background-color:white;
+    border: none;
+    margin: 0px;
+    padding: 5px;
+    height: 48px;
+    color: #999;
+    
+  }
+  
+  body.pp footer section:nth-of-type(3) form input:nth-of-type(2) {
+    max-width: 150px;
+    margin: 0px;
+    padding: 0px;
+    height: 48px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    color: black;
+    letter-spacing: .5px;
+    font-weight: bold;
+  
+  }
+  
+  body.pp footer section:nth-of-type(3) form p {
+  
+    margin: 0.5em 0em;
+    padding: 0.5em 0em;
+    font-size: .75em;
+  
+  }
+
+  /* LEES ERVARINGEN VAN ANDERE */
+
+  body.pp footer section:nth-of-type(3) ul:first-of-type {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    
+    }
+    
+    body.pp footer section:nth-of-type(3) ul:first-of-type li {
+    
+    
+      justify-content: flex-start;
+      padding: .2em;
+      max-width: 30px;
+      
+    
+    
+    }
+    
+    body.pp footer section:nth-of-type(3) ul:first-of-type img {
+      
+      min-height: 1.25em;
+      max-width: 1.25em;
+      width: auto;
+      padding:0px;
+      margin:0px;
+    }
+    
+    body.ppfooter section:nth-of-type(3) ul:first-of-type p {
+    
+      margin: 0em .5em .4em 0em;
+    
+    
+    }
+    
+    body.pp footer section:nth-of-type(3) a:first-of-type {
+    
+      color: black;
+      margin: 4px 0px 10px;
+      font-size:0.75em;
+    }
+    
+    body.pp footer div:first-of-type {
+    
+      width: 12em;
+      height: auto;
+      margin: 2em 0em;
+    }
+    
+    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) {
+    
+    
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      
+    
+    }
+    
+    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) li {
+      
+      justify-content: flex-start;
+      padding: 0em;
+      align-items: center;
+      margin: 0em;
+      max-height: 40px;
+      font-size: 1em;
+      
+    
+    }
+    
+    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) img {
+      
+      max-height: 20px;
+     
+    }
+    
+    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) h2 {
+
+      margin: 0px .5em;
+    }
+
+    
+      body.pp footer section:nth-of-type(3) ul:nth-of-type(4) {
+    
+      margin: .5em 0em;
+    }
+    
+    /* NEEM CONTACT OP */
+    
+    footer section:nth-of-type(2) ul:nth-of-type(5) {
+    
+      display: flex;
+      flex-direction: row;
+    
+    
+    }
+    
+    footer section:nth-of-type(2) ul:nth-of-type(5) li {
+    
+      justify-content: flex-start;
+      padding: 0em;
+      align-items:center;
+      margin: 0em;
+      max-height: 20px;
+      font-size: 1em;
+    
+    }
+    
+    footer section:nth-of-type(2) ul:nth-of-type(5) img {
+      
+      max-height: 20px;
+     
+    }
+    
+    footer section:nth-of-type(2) ul:nth-of-type(5) h2 {
+      margin: 0px .5em;
+    }
+    
+    /* OPTIES */
+    
+    footer table:first-of-type tr {
+      margin: 0em 0em 1.125em;
+      
+    }
+    
+    footer table:first-of-type img {
+    
+      max-height: 20px;
+      align-items: center;
+    }
+    
+    footer section:nth-of-type(2) ul:nth-of-type(6) {
+    
+     display: flex;
+     flex-direction: row;
+     
+    }
+    
+    footer section:nth-of-type(2) ul:nth-of-type(6) li {
+    
+      justify-content: flex-start;
+    }
+    
+    footer table:nth-of-type(2) td {
+    
+      font-size:0.75em;
+      margin-right: 1em;
+      
+    }

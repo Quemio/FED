@@ -4,14 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Quemio Zegwaard">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<title>Freshcotton</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="pp">
 	<header>
         <nav>
 		<ul>
@@ -29,12 +29,17 @@
 					<img src="images/icons/search.svg" alt="search">
 				</a>
 			</li>
+			<li>
+				<a href="">
+					<img src="/basiswebsite/images/icons/shopping-cart.svg" alt="">
+				</a>
+			</li>
         </ul>
     </nav>
 	</header>
 	
 	<main>
-        // product
+        <!-- product -->
         <section>
             <img src="/basiswebsite/images/afbeeldingen/obey-shirt.jpg" alt="obey shirt">
             <h5>obey</h5>
@@ -42,53 +47,78 @@
             <h3>€45,00</h3>
             <ul>
                 <li>
-                    <img src="/basiswebsite/images/icons/truck.svg" alt="truck">
+					<img src="/basiswebsite/images/icons/truck.svg" alt="truck">
+				</li>
+				<li>
                     <p>Gratis verzending boven de €75</p>
+                </li>
+			</ul>
+			<ul>
+                <li>
+					<img src="/basiswebsite/images/icons/truck.svg" alt="truck">
+				</li>
+				<li>
+                    <p>Of sameday delivery bij orders geplaatst voor 12:00 (NL).</p>
                 </li>
             </ul>
             <button>
-                small
+                Small
                 <img src="/basiswebsite/images/icons/arrow-down.svg" alt="arrow down">
             </button>
             <form action="">
                 <button>
-                    bestel nu
-                    <img src="/basiswebsite/images/icons/arrow-right.svg" alt="">
+                    <p>bestel nu</p> 
+                    <img src="/basiswebsite/images/icons/arrow-right-white.svg" alt="">
                 </button>
                 <a href="">Wat is mijn maat?</a>
-            </form>
+			</form>
+		</section>
 
-// verlanglijst
-            <form action="">
-                <button>
-                    <img src="/basiswebsite/images/icons/heart.svg" alt="heart">
-                    <p>zet op verlanglijst</p>
-                </button>
+<!--verlanglijst -->
+<section>
+        <ul>
+		   <li>
+				<img src="/basiswebsite/images/icons/heart.svg" alt="heart">
+			</li>
+		<li>
+			<p>zet op verlanglijst</p>
+		</li>
+	</ul>
+
             </form>
             <ul>
                 <li>
                     <img src="/basiswebsite/images/icons/arrow-right.svg" alt="">
-                    <p>Plaats je order binnen 9 uur 49 min 28 sec en ontvang je order morgen!</p>
-                </li>
+				</li>
+				<li>
+					<p>Plaats je order binnen 9 uur 49 min 28 sec en ontvang je order morgen!</p>
+				</li>
             </ul>
-
+			<article>
             <ul>
                 <li>
                     <h4>over dit product</h4>
-                    <img src="/basiswebsite/images/icons/arrow-right.svg" alt="">
-                </li>
-            </ul>
+				</li>
+				<li>
+					<img src="/basiswebsite/images/icons/arrow-down.svg" alt="">
+				</li>
+			</ul>
+		
             <p>Voor 23.30 uur besteld, morgen al in huis. Bestel nu gemakkelijk online je Obey Window Watcher Heavy Weight Classic Box T-Shirt White 166912381WHT De mooiste streetwear kleding, schoenen en accessoires vind je in de webshop van FRESHCOTTON. Gratis verzending en 40 dagen bedenktijd.</p>
             <ul>
+				<li>
+					<h4>verzenden en retourneren</h4>
+				</li>
                 <li>
-                    <h4>verzenden en retourneren</h4>
-                    <img src="/basiswebsite/images/icons/arrow-right.svg" alt="">
+                    <img src="/basiswebsite/images/icons/arrow-down.svg" alt="">
                 </li>
             </ul>
-            <a href="">share on whatsapp</a>
-        </section>
+			<a href="">share on whatsapp</a>
+		</article>
+		</section>
+       
 
-        // andere klanten bekeken ook
+        <!-- // andere klanten bekeken ook -->
         <section>
 			<h2>andere klanten bekeken ook</h2>
 			<ul>
@@ -128,9 +158,9 @@
 		</section>
 		
 
-		<footer>
+		<footer class="pp">
 			<section>
-                //breadcrumb
+                <!-- //breadcrumb -->
                 <ol >
 
                     <li>
@@ -145,9 +175,12 @@
                     <li>
                         <a>Obey Window Watcher Heavy Weight Classic Box T Shirt White 166912381WHT</a>
                     </li>
-                </ol>
+				</ol>
+				
+			</section>
 
-                //betaalmethoden
+				<!-- //betaalmethoden -->
+				<section>
 				<h2>betaalmethoden</h2>
 				<ul>
 					<li>
@@ -171,7 +204,9 @@
 			</ul>
 			</section>
 
-			<section> //nieuwsbrief inschrijven
+			<!-- //nieuwsbrief inschrijven -->
+
+			<section>
 				<form action="">
 					<h2>nieuwsbrief</h2>
 					<input type="text" value="E-mailadres">

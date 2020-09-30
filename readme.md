@@ -40,9 +40,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -dit ging goed & dit was lastig-
 
+Het stijlen ging redelijk snel en goed. Ik heb wel problemen gehad met het uploaden op github maar uiteindelijk is dat wel gelukt. Mijn afbeeldingen komen helaas niet door via github dus ik moet nog even kijken of ik de afbeeldingen wel correct heb gelinkt.
+
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent-
+
+(images/voortgang/week3/voortgang week 3.png)
 
 ### Agenda voor meeting
 
