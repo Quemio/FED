@@ -5,24 +5,17 @@
 
 html {
 
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
+  height: 3000px;
 }
-
 
 body {
 
-  width: 100%;
-  margin:0;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
   font-family: karla;
-  left: 0;
-  top:0;
+  height: 3000px;
   
 }
 
@@ -36,21 +29,23 @@ li {
 }
 
 
-/* header navigatie */
+/* HEADER */
 
-header nav {
+
+
+ header nav {
   width: 100%;
   left: 0;
   top: 0;
   top:0;
   height: 50px;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   flex-grow: 1;
+  
   
 }
 
-
-/*container*/
 header nav ul {
   list-style: none;
   margin: 0;
@@ -65,7 +60,7 @@ header nav ul {
   align-items: space-between;
 }
 
-/*logo*/
+/* logo */
 header nav li:nth-of-type(2) {
   flex-grow: 1;
   min-width: 50%;
@@ -74,7 +69,7 @@ header nav li:nth-of-type(2) {
 }
 
 header nav li {
-  flex-grow: 1;
+  
   max-width: 6em;
   height: 50px;
   margin-left: 8px;
@@ -84,7 +79,7 @@ header nav li {
   align-items: center;
   padding: 0px;
   
-}
+} 
 
 header nav a {
 
@@ -110,19 +105,15 @@ header nav button {
   max-width: 6em;
 }
 
-header nav button img {
-  margin: 0;
-}
-
 header nav img {
 
-  width: auto;
-  margin: auto;
   padding: 2px;
   height: 30px;
   vertical-align: middle;
   display: flex;
 }
+
+
 
 
 /* main */
@@ -160,7 +151,6 @@ main section:first-child img {
   padding: .1em;
   align-items: baseline;
   width: 1em;
-  max-height: 1em;
   margin-right: 0.5em;
 
 }
@@ -307,7 +297,6 @@ main section:nth-of-type(5) p {
 footer {
 
   padding: 1em 0em;
-  margin: 2em .5em;
 
 }
 
@@ -329,6 +318,7 @@ footer section:nth-of-type(1) ul {
   display: flex;
   background: none;
   height:30px;
+  
 }
 
 footer section:nth-of-type(1) li {
@@ -340,6 +330,7 @@ footer section:nth-of-type(1) li {
   display: flex;
   justify-content:center;
   align-items: center;
+  color: #00a369;
 
 }
 
@@ -559,19 +550,136 @@ footer section:nth-of-type(2) ul:nth-of-type(6) li {
 footer table:nth-of-type(2) td {
 
   font-size:0.75em;
-  margin-right: 1em;
   
 }
+
+footer section:nth-of-type(2) ul:nth-of-type(6) {
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(6) li:first-of-type {
+
+  max-width: 1.8em;
+  height: 30px;
+}
+
 
 
 /* PRODUCTPAGINA */
 
-body.pp {
+/* HEADER */
 
- 
+body.pp header  {
+
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
+  margin-top: .5em;
+  height: 50px;
+  position: sticky;
+  right: 0px;
+  top: 0px;
+  background-color: white;
+
+}
+
+body.pp header nav {
+
+  width: 100%;
+  padding: .5em 0em;
+  margin-top: .5em;
+
+}
+
+
+body.pp header nav ul {
+
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-grow: 4;
+  margin-top: .5em;
+
+  
+}
+
+body.pp header nav ul li {
+
+  max-width: 6em;
+  min-height: 20px;
+  max-height: 25px;
+  padding: 0px;
+  margin-left: 8px;
+  margin-right: 8px;
+
+}
+
+body.pp header nav ul li:first-of-type {
+  
+  display: flex;
+  align-items: center;
+}
+
+body.pp header nav ul li:first-of-type img {
+
+
   margin: 0px;
-  padding: .5em;
+}
+
+
+body.pp header nav ul li:first-of-type p {
+
+  margin: 0px;
+}
+
+body.pp header nav li:nth-of-type(2) {
+  flex-grow: 1;
+  min-width: 50%;
+  height: 30px;
+  justify-content: center;
+}
+
+
+body.pp header nav a {
+
+  display: block;
+  line-height: 3.5em;
+  text-align: center;
+  
+
+}
+
+body.pp header nav img {
+
+    padding: 2px;
+    height: 25px;
+    vertical-align: middle;
+    display: flex;
+}
+
+body.pp header nav button {
+
+  background-color: white;
+  border: none;
+  height: 30px;
+  min-width: 300px;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 6em;
+
 }
 
 /* PRODUCTAFBEELDING */
@@ -886,9 +994,8 @@ align-items: baseline;
 flex-wrap: wrap;
 width: 100%;
 margin: 0px;
-padding: 0px;
+padding: 10px;
 font-size: 12px;
-color: #00A369;
 
 }
 
@@ -896,6 +1003,7 @@ body.pp footer section:first-of-type li {
 
 justify-content: left;
 width: auto;
+flex-wrap: wrap;
 
   
 }
@@ -947,7 +1055,7 @@ body.pp footer section:nth-of-type(2) {
   body.pp footer section:nth-of-type(2) img {
   
     min-height: 30px;
-    max-width: 70px;
+    max-width: 40px;
     width: auto;
     padding:0px;
     margin:0px;
@@ -1171,3 +1279,111 @@ body.pp footer section:nth-of-type(2) {
       margin-right: 1em;
       
     }
+
+    body.pp footer section:nth-child(3) ul {
+
+
+      display: flex;
+      flex-direction: column;
+      padding: 8px;
+    
+    }
+    
+    body.pp footer a {
+
+      text-decoration: underline;
+    }
+
+    body.pp footer section:nth-child(3) ul li {
+
+      margin: 0;
+      margin-top: .4em;
+    }
+
+    /* KLANTENSERVICE titel*/
+
+    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) {
+
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) li:first-of-type {
+
+      max-width: 1.3em;
+
+    }
+
+     /* NEEM CONTACT OP titel*/
+
+     body.pp footer section:nth-of-type(3) ul:nth-of-type(5) {
+
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    body.pp footer section:nth-of-type(3) ul:nth-of-type(5) li:first-of-type {
+
+      max-width: 1.8em;
+
+    }
+
+    /* BESCHIKBAARHEID */
+
+
+    body.pp footer section:nth-of-type(3) ul:nth-of-type(6) {
+
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    body.pp footer section:nth-of-type(3) ul:nth-of-type(6) li:first-of-type {
+
+      max-width: 1.8em;
+    }
+
+
+    /* GRID */
+
+.gridcontainer {
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+
+
+}
+
+.gridcontainer:first-child {
+  grid-column-start:1;
+  grid-column-end:-1;
+}
+
+    /* Uitleg video of som 4 van oefening 1 */
+
+/* MEDIA QUERIES */
+
+/* MAIN wordt grid container
+
+*/
+
+/* 
+@media (min-width: 678px)  { 
+  
+  .3oprij {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 25px 25px;
+  }
+
+}
+
+
+@media () {
+
+
+} */
