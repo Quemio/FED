@@ -57,7 +57,7 @@ header nav ul {
   top: 0;
   max-height: 50px;
   display: flex;
-  align-items: space-between;
+  justify-content: space-between;
 }
 
 /* logo */
