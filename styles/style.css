@@ -14,7 +14,7 @@ body {
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
-  font-family: karla;
+  font-family: 'Karla', sans-serif;
   height: 3000px;
   
 }
@@ -585,6 +585,7 @@ body.pp header  {
   right: 0px;
   top: 0px;
   background-color: white;
+  font-family: 'Karla', sans-serif;
 
 }
 
@@ -720,6 +721,12 @@ body.pp h3:first-of-type {
   font-family: "Karla";
   text-transform: none;
   letter-spacing: .5px;
+  text-decoration: none;
+}
+
+body.pp section:first-of-type a {
+  text-decoration: none;
+  color: #212529;
 }
 
 /* UPS's */
