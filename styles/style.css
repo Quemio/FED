@@ -57,7 +57,7 @@ header nav ul {
   top: 0;
   max-height: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* logo */
@@ -160,6 +160,7 @@ main section:first-child img {
 
 main section:nth-child(2) ul {
 
+  display: flex;
   justify-content: flex-start;
   flex-direction: column;
   padding: 8px;
@@ -214,30 +215,48 @@ main section:nth-of-type(3) p {
 
 /* Vierde section met merkcategorieen */
 
-/* eerste ul voor afbeelding over de breedte van het scherm */
 main section:nth-of-type(4) ul:first-of-type {
+
+      /* CONTAINER  */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr auto; 
+      grid-row-gap: .4em;
+      grid-column-gap: .75em;
+      padding-left: 0px;
+
+}
+
+main section:nth-of-type(4) ul li:first-of-type {
+
+  grid-column: 1 / 3;
+}
+
+
+/* eerste ul voor afbeelding over de breedte van het scherm */
+/* main section:nth-of-type(4) ul:first-of-type {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: .5em 1em;
   margin: 0px;
 
-}
+} */
 
 /* tweede ul om er 4 over 2 regels weer te geven */
 /* container */
-main section:nth-of-type(4) ul:nth-child(2)  {
+/* main section:nth-of-type(4) ul:nth-child(2)  {
   display: flex;
   flex-wrap: wrap;
   padding: 0em .5em;
   margin: 0em;
-}
+} */
 
-main section:nth-of-type(4) ul:nth-child(2) li {
+/* main section:nth-of-type(4) ul:nth-child(2) li {
   flex-basis: 50%;
   padding: .357em;
   margin: 0em;
-}
+} */
 
 /* Recente blogposts / section 5 */
 
@@ -366,22 +385,25 @@ footer section:nth-of-type(2) form {
 
   margin: 0.5em 0em;
   padding: 0.5em 0em;
+  width: 90%;
+  margin: 1em 0;
   
 }
 
 footer section:nth-of-type(2) form input {
 
-  width: calc(100% - 122px);
-  min-height: 60px;
+  width: 50%;
+  max-height: 48px;
   background-color:white;
   border: none;
   margin: 0px;
-  padding: 0px;
+  padding: .75em 1em !important;
+  letter-spacing: .5px;
   height: 48px;
   color: #999;
 }
 
-footer section:nth-of-type(2) form input:nth-of-type(2) {
+footer section:nth-of-type(2) form button {
   min-width: 150px;
   margin: 0px;
   padding: 0px;
@@ -392,10 +414,14 @@ footer section:nth-of-type(2) form input:nth-of-type(2) {
   color: black;
   letter-spacing: .5px;
   font-weight: bold;
+  background-color:white;
+  border:none;
+  cursor: pointer;
+
 
 }
 
-footer section:nth-of-type(2) form p {
+footer section:nth-of-type(2) form > p {
 
   margin: 0.5em 0em;
   padding: 0.5em 0em;
@@ -550,6 +576,7 @@ footer section:nth-of-type(2) ul:nth-of-type(6) li {
 footer table:nth-of-type(2) td {
 
   font-size:0.75em;
+  margin-right: 3em;
   
 }
 
@@ -730,7 +757,7 @@ body.pp section:first-of-type a {
 }
 
 /* UPS's */
-body.pp section:first-of-type ul {
+body.pp section:nth-of-type(2) ul {
 
   display: flex;
   background-color: white;
@@ -740,7 +767,7 @@ body.pp section:first-of-type ul {
   height: 20px;
 }
 
-body.pp section:first-of-type li {
+body.pp section:nth-of-type(2) li {
 
   align-items: center;
   margin: 0;
@@ -749,14 +776,14 @@ body.pp section:first-of-type li {
 
 }
 
-body.pp section:first-of-type li p {
+body.pp section:nth-of-type(2) li p {
   color: #00a369;
   min-width: 18em;
   font-size: 1em;
   padding: 0;
 }
 
-body.pp section:first-of-type li img {
+body.pp section:nth-of-type(2) li img {
 
 max-width: 1em;
 height: auto;
@@ -766,7 +793,7 @@ margin: 0px 5px ;
 
 /* MAATFORM */
 
-body.pp section:first-of-type button:first-of-type {
+body.pp section:nth-of-type(2) button:first-of-type {
 
   background-color: white;
   padding: 10.5px 14px;
@@ -781,23 +808,23 @@ body.pp section:first-of-type button:first-of-type {
   letter-spacing: 1px;
 }
 
-body.pp section:first-of-type button:first-of-type img {
+body.pp section:nth-of-type(2) button:first-of-type img {
 
   max-width: 10px;
 }
 
 /* CTA bestellen */
-body.pp section:first-of-type form button:first-of-type {
+body.pp section:nth-of-type(2) form button:first-of-type {
 
   background-color: #00a369
 
 }
 
-body.pp section:first-of-type form button:first-of-type img {
+body.pp section:nth-of-type(2) form button:first-of-type img {
 
   max-width: 10px;
 }
-body.pp section:first-of-type form button:first-of-type p {
+body.pp section:nth-of-type(2) form button:first-of-type p {
 
   color: white;
   text-transform: uppercase;
@@ -805,7 +832,7 @@ body.pp section:first-of-type form button:first-of-type p {
 }
 
 /* WAT IS MIJN MAAT? */
-body.pp section:first-of-type form a {
+body.pp section:nth-of-type(2) form a {
 
   width: 100%;
   background-color: white;
@@ -826,7 +853,7 @@ body.pp section:first-of-type form a {
 }
 
 
-/* ZET OP VERLANLIJST */body.pp section:nth-of-type(2) ul {
+/* ZET OP VERLANLIJST */body.pp section:nth-of-type(3) ul:first-of-type {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -834,18 +861,18 @@ body.pp section:first-of-type form a {
   
 }
 
-body.pp section:nth-of-type(2) li {
+body.pp section:nth-of-type(3) li {
   max-width: 150px;
   height: auto;
   margin: 0px 5px ;
 }
 
-body.pp section:nth-of-type(2) li img {
+body.pp section:nth-of-type(3) li img {
   width: 20px;
 
 }
 
-body.pp section:nth-of-type(2) li p {
+body.pp section:nth-of-type(3) li p {
   max-width: 150px;
   margin: 0px;
   font-size: 12.2px;
@@ -853,7 +880,7 @@ body.pp section:nth-of-type(2) li p {
 
 /* PLAATS JE ORDER */
 
-body.pp section:nth-of-type(2) ul:nth-of-type(2) {
+body.pp section:nth-of-type(3) ul:nth-of-type(2) {
 
 display: flex;
 justify-content: flex-start;
@@ -862,12 +889,12 @@ align-items: center;
 
 }
 
-body.pp section:nth-of-type(2) ul:nth-of-type(2) p {
+body.pp section:nth-of-type(3) ul:nth-of-type(2) p {
 
   min-width: 60%;
 }
 
-body.pp section:nth-of-type(2) ul:nth-of-type(2) img {
+body.pp section:nth-of-type(3) ul:nth-of-type(2) img {
 
   width: 10px;
 }
@@ -1283,7 +1310,7 @@ body.pp footer section:nth-of-type(2) {
     footer table:nth-of-type(2) td {
     
       font-size:0.75em;
-      margin-right: 1em;
+  
       
     }
 
@@ -1356,7 +1383,7 @@ body.pp footer section:nth-of-type(2) {
 
     /* GRID */
 
-.gridcontainer {
+/* .gridcontainer {
 
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
@@ -1367,30 +1394,109 @@ body.pp footer section:nth-of-type(2) {
 .gridcontainer:first-child {
   grid-column-start:1;
   grid-column-end:-1;
-}
+} */
 
     /* Uitleg video of som 4 van oefening 1 */
 
 /* MEDIA QUERIES */
 
-/* MAIN wordt grid container
+/* SMALL SCREEN  */
 
-*/
+@media (min-width: 768px)  { 
 
-/* 
-@media (min-width: 678px)  { 
-  
-  .3oprij {
+  /* EERSTE SECTION */
+
+  main section:nth-of-type(2) ul {
+    /* CONTAINER  */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3fr 1fr;
-    gap: 25px 25px;
+    grid-template-columns: repeat(3, 1fr);
+    /* HEIGHT TWEEDE RIJ STAAT OP AUTO */
+    grid-template-rows: 1fr auto; 
+    grid-row-gap: .4em;
+    grid-column-gap: .75em;
+   
   }
+
+
+  li.shophere {
+
+    grid-column: 1 / 4;
+  }
+
+
+  /* SPECIAAL VOOR JOU GESELECTEERD */
+
+  main section:nth-of-type(3) ul {
+
+    /* GRID CONTAINER WANT FLEX LUISTERDE NIET  */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding: 0em .5em;
+  }
+
+  main section:nth-of-type(3) li {
+    padding: .357em;
+    margin: 0em 0em 1em 0em;
+  }
+
+  /* Vierde section met merkcategorieen */ 
+
+  main section:nth-of-type(4) ul:first-of-type {
+
+    /* CONTAINER  */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr auto; 
+    grid-row-gap: .4em;
+    grid-column-gap: .75em;
+    padding-left: 0px;
+
+}
+
+main section:nth-of-type(4) ul li:first-of-type {
+
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+main section:nth-of-type(5) ul {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  padding: 0em .5em;
+
+}
+
+main section:nth-of-type(5) ul {
+
+  padding: .357em;
+  margin: 0em 0em 1em 0em;
 
 }
 
 
-@media () {
+/* PRODUCTPAGINA */
+
+body.pp 
 
 
-} */
+}
+
+/* MEDIUM SCREEN  */
+
+@media (min-width: 994px)  { 
+
+
+
+}
+
+/* MEDIUM SCREEN  */
+
+@media (min-width: 1054px)  { 
+
+  
+
+}
+
