@@ -757,7 +757,7 @@ body.pp section:first-of-type a {
 }
 
 /* UPS's */
-body.pp section:nth-of-type(2) ul {
+body.pp section:first-of-type ul {
 
   display: flex;
   background-color: white;
@@ -767,7 +767,7 @@ body.pp section:nth-of-type(2) ul {
   height: 20px;
 }
 
-body.pp section:nth-of-type(2) li {
+body.pp section:first-of-type li {
 
   align-items: center;
   margin: 0;
@@ -776,14 +776,14 @@ body.pp section:nth-of-type(2) li {
 
 }
 
-body.pp section:nth-of-type(2) li p {
+body.pp section:first-of-type li p {
   color: #00a369;
   min-width: 18em;
   font-size: 1em;
   padding: 0;
 }
 
-body.pp section:nth-of-type(2) li img {
+body.pp section:first-of-type li img {
 
 max-width: 1em;
 height: auto;
@@ -793,7 +793,7 @@ margin: 0px 5px ;
 
 /* MAATFORM */
 
-body.pp section:nth-of-type(2) button:first-of-type {
+body.pp section:first-of-type button:first-of-type {
 
   background-color: white;
   padding: 10.5px 14px;
@@ -808,23 +808,23 @@ body.pp section:nth-of-type(2) button:first-of-type {
   letter-spacing: 1px;
 }
 
-body.pp section:nth-of-type(2) button:first-of-type img {
+body.pp section:first-of-type button:first-of-type img {
 
   max-width: 10px;
 }
 
 /* CTA bestellen */
-body.pp section:nth-of-type(2) form button:first-of-type {
+body.pp section:first-of-type form button:first-of-type {
 
   background-color: #00a369
 
 }
 
-body.pp section:nth-of-type(2) form button:first-of-type img {
+body.pp section:first-of-type form button:first-of-type img {
 
   max-width: 10px;
 }
-body.pp section:nth-of-type(2) form button:first-of-type p {
+body.pp section:first-of-type form button:first-of-type p {
 
   color: white;
   text-transform: uppercase;
@@ -832,7 +832,7 @@ body.pp section:nth-of-type(2) form button:first-of-type p {
 }
 
 /* WAT IS MIJN MAAT? */
-body.pp section:nth-of-type(2) form a {
+body.pp section:first-of-type form a {
 
   width: 100%;
   background-color: white;
@@ -853,7 +853,7 @@ body.pp section:nth-of-type(2) form a {
 }
 
 
-/* ZET OP VERLANLIJST */body.pp section:nth-of-type(3) ul:first-of-type {
+/* ZET OP VERLANLIJST */body.pp section:nth-of-type(2) ul {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -861,18 +861,18 @@ body.pp section:nth-of-type(2) form a {
   
 }
 
-body.pp section:nth-of-type(3) li {
+body.pp section:nth-of-type(2) li {
   max-width: 150px;
   height: auto;
   margin: 0px 5px ;
 }
 
-body.pp section:nth-of-type(3) li img {
+body.pp section:nth-of-type(2) li img {
   width: 20px;
 
 }
 
-body.pp section:nth-of-type(3) li p {
+body.pp section:nth-of-type(2) li p {
   max-width: 150px;
   margin: 0px;
   font-size: 12.2px;
@@ -880,7 +880,7 @@ body.pp section:nth-of-type(3) li p {
 
 /* PLAATS JE ORDER */
 
-body.pp section:nth-of-type(3) ul:nth-of-type(2) {
+body.pp section:nth-of-type(2) ul:nth-of-type(2) {
 
 display: flex;
 justify-content: flex-start;
@@ -889,12 +889,12 @@ align-items: center;
 
 }
 
-body.pp section:nth-of-type(3) ul:nth-of-type(2) p {
+body.pp section:nth-of-type(2) ul:nth-of-type(2) p {
 
   min-width: 60%;
 }
 
-body.pp section:nth-of-type(3) ul:nth-of-type(2) img {
+body.pp section:nth-of-type(2) ul:nth-of-type(2) img {
 
   width: 10px;
 }
@@ -1310,7 +1310,7 @@ body.pp footer section:nth-of-type(2) {
     footer table:nth-of-type(2) td {
     
       font-size:0.75em;
-  
+      margin-right: 1em;
       
     }
 
@@ -1476,10 +1476,20 @@ main section:nth-of-type(5) ul {
 
 }
 
+/* --------------------------------- PRODUCTPAGINA --------------------------------- */
 
-/* PRODUCTPAGINA */
+.ppgridcontainer {
 
-body.pp 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr; 
+  grid-row-gap: .4em;
+  grid-column-gap: .75em;
+  padding-left: 0px;
+
+
+}
+
 
 
 }
@@ -1490,13 +1500,20 @@ body.pp
 
 
 
+/* --------------------------------- PRODUCTPAGINA --------------------------------- */
+
+
+
 }
 
 /* MEDIUM SCREEN  */
 
 @media (min-width: 1054px)  { 
 
-  
+
+
+  /* --------------------------------- PRODUCTPAGINA --------------------------------- */
+
+
 
 }
-
