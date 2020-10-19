@@ -3,11 +3,6 @@
   box-sizing:border-box;  
 }
 
-html {
-
-  height: 3000px;
-}
-
 body {
 
   font-weight: 400;
@@ -158,12 +153,17 @@ main section:first-child img {
 
 /* main images */
 
-main section:nth-child(2) ul {
+/* body main section:nth-child(2) ul { */
+
+body main section:nth-of-type(2) ul {
 
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  margin: 0;
   padding: 8px;
+  align-items: center;
+  width: 100%;
 
 }
 
@@ -711,9 +711,6 @@ body.pp header nav button {
 }
 
 /* PRODUCTAFBEELDING */
-
-/* doet raar? */
-
 body.pp section:first-of-type img {
   
  width: 100%;
@@ -751,49 +748,67 @@ body.pp h3:first-of-type {
   text-decoration: none;
 }
 
-body.pp section:first-of-type a {
+body.pp section:nth-of-type(2) a {
   text-decoration: none;
   color: #212529;
 }
 
 /* UPS's */
-body.pp section:first-of-type ul {
+/* body.pp section:nth-of-type(2) ul {
 
   display: flex;
   background-color: white;
-  margin: 0;
-  padding: 0px;
   justify-content: flex-start;
   height: 20px;
+
 }
 
-body.pp section:first-of-type li {
+body.pp section:nth-of-type(2) li {
 
   align-items: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 1em;
+
 
 }
 
-body.pp section:first-of-type li p {
+body.pp section:nth-of-type(2) li p {
   color: #00a369;
   min-width: 18em;
   font-size: 1em;
   padding: 0;
 }
 
-body.pp section:first-of-type li img {
+body.pp section:nth-of-type(2) li img {
 
 max-width: 1em;
-height: auto;
-margin: 0px 5px ;
+max-height: 1em;
 
+} */
+
+body.pp section:nth-of-type(2) ul {
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0px;
+}
+
+body.pp section:nth-of-type(2) li {
+
+  height: auto;
+  color: #00a369;
+  margin: 0em .25em;
+  font-size: .9em;
+}
+
+body.pp section:nth-of-type(2) li img {
+
+  max-height: 1em;
 }
 
 /* MAATFORM */
 
-body.pp section:first-of-type button:first-of-type {
+body.pp section:nth-of-type(2) button:first-of-type {
 
   background-color: white;
   padding: 10.5px 14px;
@@ -808,23 +823,23 @@ body.pp section:first-of-type button:first-of-type {
   letter-spacing: 1px;
 }
 
-body.pp section:first-of-type button:first-of-type img {
+body.pp section:nth-of-type(2) button:first-of-type img {
 
   max-width: 10px;
 }
 
 /* CTA bestellen */
-body.pp section:first-of-type form button:first-of-type {
+body.pp section:nth-of-type(2) form button:first-of-type {
 
   background-color: #00a369
 
 }
 
-body.pp section:first-of-type form button:first-of-type img {
+body.pp section:nth-of-type(2) form button:first-of-type img {
 
   max-width: 10px;
 }
-body.pp section:first-of-type form button:first-of-type p {
+body.pp section:nth-of-type(2) form button:first-of-type p {
 
   color: white;
   text-transform: uppercase;
@@ -832,7 +847,7 @@ body.pp section:first-of-type form button:first-of-type p {
 }
 
 /* WAT IS MIJN MAAT? */
-body.pp section:first-of-type form a {
+body.pp section:nth-of-type(2) form a {
 
   width: 100%;
   background-color: white;
@@ -853,7 +868,9 @@ body.pp section:first-of-type form a {
 }
 
 
-/* ZET OP VERLANLIJST */body.pp section:nth-of-type(2) ul {
+/* ZET OP VERLANLIJST */
+
+body.pp section:nth-of-type(3) ul {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -861,26 +878,37 @@ body.pp section:first-of-type form a {
   
 }
 
-body.pp section:nth-of-type(2) li {
-  max-width: 150px;
+body.pp section:nth-of-type(3) ul:first-of-type {
+
+  text-transform: uppercase;
+}
+
+body.pp section:nth-of-type(3) li {
+ 
   height: auto;
   margin: 0px 5px ;
 }
 
-body.pp section:nth-of-type(2) li img {
-  width: 20px;
+body.pp section:nth-of-type(3) ul li:first-of-type {
+
+  max-width: 2em;
+}
+
+body.pp section:nth-of-type(3) li img {
+ 
+  min-width: 1em;
 
 }
 
-body.pp section:nth-of-type(2) li p {
-  max-width: 150px;
+body.pp section:nth-of-type(3) li p {
+  
   margin: 0px;
   font-size: 12.2px;
 }
 
 /* PLAATS JE ORDER */
 
-body.pp section:nth-of-type(2) ul:nth-of-type(2) {
+body.pp section:nth-of-type(3) ul:nth-of-type(2) {
 
 display: flex;
 justify-content: flex-start;
@@ -889,18 +917,18 @@ align-items: center;
 
 }
 
-body.pp section:nth-of-type(2) ul:nth-of-type(2) p {
+body.pp section:nth-of-type(3) ul:nth-of-type(2) p {
 
   min-width: 60%;
 }
 
-body.pp section:nth-of-type(2) ul:nth-of-type(2) img {
+body.pp section:nth-of-type(3) ul:nth-of-type(2) img {
 
   width: 10px;
 }
 
 /* OVER DIT PRODUCT */
-body.pp section:nth-of-type(2) ul:nth-of-type(3) {
+body.pp section:nth-of-type(3) ul:nth-of-type(3) {
 
 display: flex;
 justify-content: space-between;
@@ -910,11 +938,11 @@ align-items: center;
 
 }
 
-body.pp section:nth-of-type(2) ul:nth-of-type(3) img {
+body.pp section:nth-of-type(3) ul:nth-of-type(3) img {
   max-width: 5px;
 }
 
-body.pp section:nth-of-type(2) ul:nth-of-type(3) li:first-of-type {
+body.pp section:nth-of-type(3) ul:nth-of-type(3) li:first-of-type {
 
   text-transform: uppercase;
   font-weight: 600;
@@ -924,7 +952,7 @@ body.pp section:nth-of-type(2) ul:nth-of-type(3) li:first-of-type {
 }
 
 /* BESTELINFO PARAGRAAF */
-body.pp section:nth-of-type(2) article p {
+body.pp section:nth-of-type(3) article p {
 
   margin: 0px 12px;
   color: #999999;
@@ -933,7 +961,7 @@ body.pp section:nth-of-type(2) article p {
 }
 
 
-body.pp section:nth-of-type(2) article ul {
+body.pp section:nth-of-type(3) article ul {
 
  display: flex;
  justify-content: space-between;
@@ -943,12 +971,12 @@ body.pp section:nth-of-type(2) article ul {
 
 }
 
-body.pp section:nth-of-type(2) article ul img {
+body.pp section:nth-of-type(3) article ul img {
   max-width: 5px;
 }
 
 /* VERZENDEN EN RETOURNEREN */
-body.pp section:nth-of-type(2) article ul:nth-of-type(2) {
+body.pp section:nth-of-type(3) article ul:nth-of-type(2) {
 
   display: flex;
   justify-content: space-between;
@@ -957,14 +985,14 @@ body.pp section:nth-of-type(2) article ul:nth-of-type(2) {
  
 }
 
-body.pp section:nth-of-type(2) article ul h4 {
+body.pp section:nth-of-type(3) article ul h4 {
 
   margin: 0;
   min-width: 250px;
   font-size: 14px;
 }
 
-body.pp section:nth-of-type(2) article li:first-of-type{
+body.pp section:nth-of-type(3) article li:first-of-type{
 
   text-transform: uppercase;
   font-style: normal;
@@ -974,7 +1002,7 @@ body.pp section:nth-of-type(2) article li:first-of-type{
 }
 
 /* SHARE ON WHATSAPP */
-body.pp section:nth-of-type(2) article a {
+body.pp section:nth-of-type(3) article a {
 
   display: flex;
   justify-content: center;
@@ -1001,6 +1029,42 @@ body.pp section:nth-of-type(3) h3 {
   color: #000000;
   font-size: 1em;
   font-weight: 800;
+}
+/* ANDERE KLANTEN BEKEKEN OOK */
+
+
+/* Container */
+body.pp section:nth-of-type(4) ul {
+  display:flex;
+  flex-wrap:wrap;
+  padding: 0em .5em;
+  width: 90%;
+  background-color: black;
+}
+
+/* list item breedte gegeven van 50% waardoor ze in combinatie met de flexwrap over 2 regels vallen */
+body.pp section:nth-of-type(4) ul:first-of-type li {
+  flex-basis:50%;
+  padding: .357em;
+  margin: 0em 0em 1em 0em;
+}
+
+body.pp section:nth-of-type(4) a {
+  text-decoration: none;
+}
+
+body.pp section:nth-of-type(4) h3 {
+  margin: .357em 0em 0em;
+  color: #000000;
+  font-size: 1em;
+}
+
+body.pp section:nth-of-type(4) p {
+  
+  color: #000000;
+  font-size: .875em;
+  margin: 0px;
+
 }
 
 /* FOOTER */
@@ -1178,8 +1242,6 @@ body.pp footer section:nth-of-type(2) {
       padding: .2em;
       max-width: 30px;
       
-    
-    
     }
     
     body.pp footer section:nth-of-type(3) ul:first-of-type img {
@@ -1490,6 +1552,10 @@ main section:nth-of-type(5) ul {
 
 }
 
+body.pp section:nth-of-type(4) {
+
+  display: none;
+}
 
 
 }
