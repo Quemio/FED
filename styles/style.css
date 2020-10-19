@@ -1543,6 +1543,7 @@ main section:nth-of-type(5) ul {
 
 /* --------------------------------- PRODUCTPAGINA --------------------------------- */
 
+/* gridcontainer */
 body.pp main {
 
   display: grid;
@@ -1555,12 +1556,23 @@ body.pp main {
 
 }
 
+
 body.pp main section:nth-of-type(4) ul:first-of-type {
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  padding: 0em .5em;
+  grid-template-columns: repeat(3, 1fr);
+  /* HEIGHT TWEEDE RIJ STAAT OP AUTO */
+  grid-template-rows: 1fr auto; 
+  grid-row-gap: .4em;
+  grid-column-gap: .75em;
+
+}
+
+body.pp main section:nth-of-type(4) {
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+
 
 }
 
