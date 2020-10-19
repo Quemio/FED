@@ -16,6 +16,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -dit ging goed & dit was lastig-
 
+Ik heb veel moeite met het in elkaar krijgen van mijn header en de productpagina en ik besteed nu veel te veel tijd aan de styling terwijl ik ook nog javascript, microinteracties en accesability moet maken.
 **Screenshot(s):**
 
 -screenshot(s) van je eindresultaat-
