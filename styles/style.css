@@ -622,7 +622,8 @@ body.pp header nav {
 
   width: 100%;
   padding: .5em 0em;
-  margin-top: .5em;
+  position: sticky;
+  top: 0;
 
 }
 
@@ -649,6 +650,22 @@ body.pp header nav ul li {
   padding: 0px;
   margin-left: 8px;
   margin-right: 8px;
+
+}
+
+body.pp header nav button {
+
+
+background-color: white;
+border: none;
+height: 30px;
+width: 100px;
+padding: 0px;
+margin: 0px;
+top: 0px;
+display: flex;
+align-items: center;
+max-width: 6em;
 
 }
 
@@ -700,17 +717,76 @@ body.pp header nav button {
   background-color: white;
   border: none;
   height: 30px;
-  min-width: 300px;
+  width: 100px;
   padding: 0px;
   margin: 0px;
   top: 0px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
   max-width: 6em;
+  cursor:pointer;
 
 }
+
+
+/* hamburger menu */
+
+body.pp header div {
+
+  background-color: white;
+  transform: translatex();
+  left: 1em;;
+}
+
+body.pp header div ul {
+
+  position:fixed;
+  background-color: white;
+  padding:0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 3em;
+  transform: translatex(-100%);
+
+  
+}
+
+body.pp header div ul.toonMenu {
+  /* jouw code hier */
+  transform: translatex(0);
+}
+
+body.pp header div ul li {
+
+
+  border-bottom: .1px #F8F8F8 solid;
+  padding: 1em 0em;
+  margin-left: 1em;
+
+}
+
+body.pp header div ul li a {
+
+  color: #999999;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0em .25em;
+  color:black;
+
+
+  
+  }
+  
+body.pp header div ul li:last-of-type a {
+  
+    color:#ff0000;
+  
+  }
 
 /* PRODUCTAFBEELDING */
 body.pp section:first-of-type img {
@@ -1541,6 +1617,8 @@ main section:nth-of-type(5) ul {
 
 }
 
+
+
 /* --------------------------------- PRODUCTPAGINA --------------------------------- */
 
 /* gridcontainer */
@@ -1553,14 +1631,12 @@ body.pp main {
   grid-column-gap: .75em;
   padding-left: 0px;
 
-
 }
-
 
 body.pp main section:nth-of-type(4) ul:first-of-type {
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   /* HEIGHT TWEEDE RIJ STAAT OP AUTO */
   grid-template-rows: 1fr auto; 
   grid-row-gap: .4em;
@@ -1572,8 +1648,55 @@ body.pp main section:nth-of-type(4) {
 
   grid-column-start: 1;
   grid-column-end: 4;
+  margin: 1em 0em 0em 0em;
+
+}
 
 
+/* subnav */
+
+body.pp header div {
+
+  visibility: visible;
+  background-color: white;
+  width: 100%;
+  height: 3em;
+  border-bottom: .1px #F8F8F8 solid;
+  border-top: .1px #F8F8F8 solid;
+  align-items: center;
+
+}
+
+body.pp header div ul {
+
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1em;
+  width: 100%;
+
+}
+
+
+body.pp header div ul li a {
+
+color: #999999;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration: none;
+font-size: 14px;
+margin: 0em .25em;
+
+}
+
+body.pp header div ul li:last-of-type a {
+
+  color:#ff0000;
+
+}
+
+body.pp main {
+
+  margin-top: 4.5em;
 }
 
 
