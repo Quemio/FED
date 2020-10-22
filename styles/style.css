@@ -15,19 +15,18 @@ body {
 }
 
 img {
+
   max-width: 100%;
+
 }
 
 li {
 
   list-style: none;
+
 }
 
-
 /* HEADER */
-
-
-
  header nav {
   width: 100%;
   left: 0;
@@ -37,7 +36,6 @@ li {
   margin-left: auto;
   margin-right: auto;
   flex-grow: 1;
-  
   
 }
 
@@ -53,6 +51,7 @@ header nav ul {
   max-height: 50px;
   display: flex;
   justify-content: space-around;
+
 }
 
 /* logo */
@@ -98,6 +97,7 @@ header nav button {
   display: flex;
   align-items: center;
   max-width: 6em;
+
 }
 
 header nav img {
@@ -106,14 +106,10 @@ header nav img {
   height: 30px;
   vertical-align: middle;
   display: flex;
+
 }
 
-
-
-
 /* main */
-
-
 /* bestel info */
 main section:first-child ul {
 
@@ -129,7 +125,6 @@ main section:first-child ul {
   padding: .5rem;
   margin: .5rem;
  
-
 }
 
 main section:first-child li {
@@ -150,7 +145,6 @@ main section:first-child img {
 
 }
 
-
 /* main images */
 
 /* body main section:nth-child(2) ul { */
@@ -162,13 +156,12 @@ body main section:nth-of-type(2) ul {
   flex-direction: column;
   margin: 0;
   padding: 8px;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
 
 }
 
 /* Speciaal voor jou geselecteerd */
-
 /* Titel */
 h2 {
 
@@ -181,6 +174,7 @@ h2 {
     margin-right: 15px;
 
 }
+
 /* Container */
 main section:nth-of-type(3) ul {
   display:flex;
@@ -190,16 +184,19 @@ main section:nth-of-type(3) ul {
 
 /* list item breedte gegeven van 50% waardoor ze in combinatie met de flexwrap over 2 regels vallen */
 main section:nth-of-type(3) li {
+
   flex-basis:50%;
   padding: .357em;
   margin: 0em 0em 1em 0em;
 }
 
 main section:nth-of-type(3) a {
+
   text-decoration: none;
 }
 
 main section:nth-of-type(3) h3 {
+
   margin: .357em 0em 0em;
   color: #000000;
   font-size: 1em;
@@ -231,7 +228,6 @@ main section:nth-of-type(4) ul li:first-of-type {
 
   grid-column: 1 / 3;
 }
-
 
 /* eerste ul voor afbeelding over de breedte van het scherm */
 /* main section:nth-of-type(4) ul:first-of-type {
@@ -311,7 +307,6 @@ main section:nth-of-type(5) p {
   
 }
 
-
 /* FOOTER */
 footer {
 
@@ -360,15 +355,15 @@ footer section:nth-of-type(1) img {
   width: auto;
   padding:0px;
   margin:0px;
+
 }
 
 /* NIEUWSBRIEF FORM */
-
 footer section:nth-of-type(2) {
 
   background-color: #F8F8F8;
-  
   padding: .5em;
+
 }
 
 footer section:nth-of-type(2) h2 {
@@ -418,7 +413,6 @@ footer section:nth-of-type(2) form button {
   border:none;
   cursor: pointer;
 
-
 }
 
 footer section:nth-of-type(2) form > p {
@@ -429,9 +423,7 @@ footer section:nth-of-type(2) form > p {
 
 }
 
-
 /* Lees ervaringen van een ander */
-
 footer section:nth-of-type(2) ul:first-of-type {
 
 display: flex;
@@ -443,11 +435,8 @@ margin: 0px;
 
 footer section:nth-of-type(2) ul:first-of-type li {
 
-
   justify-content: flex-start;
   padding: .2em;
-  
-
 
 }
 
@@ -458,12 +447,12 @@ footer section:nth-of-type(2) ul:first-of-type img {
   width: auto;
   padding:0px;
   margin:0px;
+
 }
 
 footer section:nth-of-type(2) ul:first-of-type p {
 
   margin: 0em .5em .4em 0em;
-
 
 }
 
@@ -479,15 +468,14 @@ footer div:first-of-type {
   width: 12em;
   height: auto;
   margin: 2em 0em;
+
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(3) {
 
-
   display: flex;
   flex-direction: row;
   
-
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(3) li {
@@ -523,7 +511,6 @@ footer section:nth-of-type(2) ul:nth-of-type(5) {
 
   display: flex;
   flex-direction: row;
-
 
 }
 
@@ -595,15 +582,10 @@ footer section:nth-of-type(2) ul:nth-of-type(6) li:first-of-type {
   height: 30px;
 }
 
-
-
 /* PRODUCTPAGINA */
 
-
-
 /* HEADER */
-
-body.pp header  {
+/* body.pp header  {
 
   display: flex;
   flex-wrap: wrap;
@@ -627,7 +609,6 @@ body.pp header nav {
 
 }
 
-
 body.pp header nav ul {
 
   flex-grow: 1;
@@ -638,7 +619,6 @@ body.pp header nav ul {
   padding: 0;
   flex-grow: 4;
   margin-top: .5em;
-
   
 }
 
@@ -654,7 +634,6 @@ body.pp header nav ul li {
 }
 
 body.pp header nav button {
-
 
 background-color: white;
 border: none;
@@ -673,18 +652,20 @@ body.pp header nav ul li:first-of-type {
   
   display: flex;
   align-items: center;
+
 }
 
 body.pp header nav ul li:first-of-type img {
 
-
   margin: 0px;
+
 }
 
 
 body.pp header nav ul li:first-of-type p {
 
   margin: 0px;
+
 }
 
 body.pp header nav li:nth-of-type(2) {
@@ -694,13 +675,11 @@ body.pp header nav li:nth-of-type(2) {
   justify-content: center;
 }
 
-
 body.pp header nav a {
 
   display: block;
   line-height: 3.5em;
   text-align: center;
-  
 
 }
 
@@ -726,67 +705,7 @@ body.pp header nav button {
   max-width: 6em;
   cursor:pointer;
 
-}
-
-
-/* hamburger menu */
-
-body.pp header div {
-
-  background-color: white;
-  transform: translatex();
-  left: 1em;;
-}
-
-body.pp header div ul {
-
-  position:fixed;
-  background-color: white;
-  padding:0;
-  margin: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  top: 3em;
-  transform: translatex(-100%);
-
-  
-}
-
-body.pp header div ul.toonMenu {
-  /* jouw code hier */
-  transform: translatex(0);
-}
-
-body.pp header div ul li {
-
-
-  border-bottom: .1px #F8F8F8 solid;
-  padding: 1em 0em;
-  margin-left: 1em;
-
-}
-
-body.pp header div ul li a {
-
-  color: #999999;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  margin: 0em .25em;
-  color:black;
-
-
-  
-  }
-  
-body.pp header div ul li:last-of-type a {
-  
-    color:#ff0000;
-  
-  }
+} */
 
 /* PRODUCTAFBEELDING */
 body.pp section:first-of-type img {
@@ -885,7 +804,6 @@ body.pp section:nth-of-type(2) li img {
 }
 
 /* MAATFORM */
-
 body.pp section:nth-of-type(2) button:first-of-type {
 
   background-color: white;
@@ -899,6 +817,7 @@ body.pp section:nth-of-type(2) button:first-of-type {
   margin: 1em 0em;
   font-weight: 600;
   letter-spacing: 1px;
+  
 }
 
 body.pp section:nth-of-type(2) button:first-of-type img {
@@ -944,7 +863,6 @@ body.pp section:nth-of-type(2) form a {
   font-size: 14px;
 
 }
-
 
 /* ZET OP VERLANLIJST */
 
@@ -1003,6 +921,7 @@ body.pp section:nth-of-type(3) ul:nth-of-type(2) p {
 body.pp section:nth-of-type(3) ul:nth-of-type(2) img {
 
   width: 10px;
+
 }
 
 /* OVER DIT PRODUCT */
@@ -1012,7 +931,6 @@ display: flex;
 justify-content: space-between;
 flex-direction: row;
 align-items: center;
-
 
 }
 
@@ -1037,7 +955,6 @@ body.pp section:nth-of-type(3) article p {
   font-weight: 200;
   font-size: 12px;
 }
-
 
 body.pp section:nth-of-type(3) article ul {
 
@@ -1109,10 +1026,8 @@ body.pp section:nth-of-type(3) h3 {
   font-weight: 800;
 }
 
-
 /* ANDERE KLANTEN BEKEKEN OOK
 /* Container */
-
 body.pp section:nth-of-type(4) ul {
   
   display:flex;
@@ -1147,7 +1062,6 @@ body.pp section:nth-of-type(4) p {
 } 
 
 /* FOOTER */
-
 body.pp footer {
 
   margin: 0px;
@@ -1155,7 +1069,6 @@ body.pp footer {
 }
 
 /* BREADCRUMB */
-
 body.pp footer section {
 
   width: 100%;
@@ -1182,7 +1095,6 @@ justify-content: left;
 width: auto;
 flex-wrap: wrap;
 
-  
 }
 
 body.pp footer section:first-of-type li a {
@@ -1192,7 +1104,6 @@ body.pp footer section:first-of-type li a {
 
 
 /* BETAALMETHODE */
-
 body.pp footer section:nth-of-type(2) {
 
   width: 100%;
@@ -1213,6 +1124,7 @@ body.pp footer section:nth-of-type(2) {
     padding: 2em 0em;
     width: 100%;
     right: 0;
+
   }
   
   body.pp footer section:nth-of-type(2) ul li {
@@ -1224,8 +1136,6 @@ body.pp footer section:nth-of-type(2) {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
   
   }
   
@@ -1236,19 +1146,18 @@ body.pp footer section:nth-of-type(2) {
     width: auto;
     padding:0px;
     margin:0px;
+
   }
 
   /*  NIEUWSBRIEF */
-
   body.pp footer section:nth-of-type(3) {
 
     background-color: #F8F8F8;
-    
     padding: .5em;
+
   }
   
   body.pp footer section:nth-of-type(3) h2 {
-  
   
     font-size: 1em;
     letter-spacing: 0.5px;
@@ -1262,11 +1171,8 @@ body.pp footer section:nth-of-type(2) {
     margin: 0.5em 0em;
     padding: 0.5em 0em;
    
-    
   }
 
-
-  
   body.pp footer section:nth-of-type(3) form input {
   
     min-width: 150px;
@@ -1330,12 +1236,12 @@ body.pp footer section:nth-of-type(2) {
       width: auto;
       padding:0px;
       margin:0px;
+
     }
     
     body.ppfooter section:nth-of-type(3) ul:first-of-type p {
     
       margin: 0em .5em .4em 0em;
-    
     
     }
     
@@ -1355,11 +1261,9 @@ body.pp footer section:nth-of-type(2) {
     
     body.pp footer section:nth-of-type(3) ul:nth-of-type(3) {
     
-    
       display: flex;
       justify-content: flex-start;
       flex-direction: row;
-      
     
     }
     
@@ -1372,7 +1276,6 @@ body.pp footer section:nth-of-type(2) {
       max-height: 40px;
       font-size: 1em;
       
-    
     }
     
     body.pp footer section:nth-of-type(3) ul:nth-of-type(3) img {
@@ -1386,20 +1289,18 @@ body.pp footer section:nth-of-type(2) {
       margin: 0px .5em;
     }
 
-    
       body.pp footer section:nth-of-type(3) ul:nth-of-type(4) {
     
       margin: .5em 0em;
+
     }
     
     /* NEEM CONTACT OP */
-    
     footer section:nth-of-type(2) ul:nth-of-type(5) {
     
       display: flex;
       flex-direction: row;
-    
-    
+
     }
     
     footer section:nth-of-type(2) ul:nth-of-type(5) li {
@@ -1424,8 +1325,8 @@ body.pp footer section:nth-of-type(2) {
     }
     
     /* OPTIES */
-    
     footer table:first-of-type tr {
+
       margin: 0em 0em 1.125em;
       
     }
@@ -1446,6 +1347,7 @@ body.pp footer section:nth-of-type(2) {
     footer section:nth-of-type(2) ul:nth-of-type(6) li {
     
       justify-content: flex-start;
+
     }
     
     footer table:nth-of-type(2) td {
@@ -1457,16 +1359,16 @@ body.pp footer section:nth-of-type(2) {
 
     body.pp footer section:nth-child(3) ul {
 
-
       display: flex;
       flex-direction: column;
       padding: 8px;
     
     }
-    
+
     body.pp footer a {
 
       text-decoration: underline;
+
     }
 
     body.pp footer section:nth-child(3) ul li {
@@ -1476,11 +1378,11 @@ body.pp footer section:nth-of-type(2) {
     }
 
     /* KLANTENSERVICE titel*/
-
     body.pp footer section:nth-of-type(3) ul:nth-of-type(3) {
 
       display: flex;
       justify-content: flex-start;
+
     }
 
     body.pp footer section:nth-of-type(3) ul:nth-of-type(3) li:first-of-type {
@@ -1490,13 +1392,13 @@ body.pp footer section:nth-of-type(2) {
     }
 
      /* NEEM CONTACT OP titel*/
-
      body.pp footer section:nth-of-type(3) ul:nth-of-type(5) {
 
       display: flex;
       justify-content: flex-start;
       flex-direction: row;
       align-items: center;
+
     }
 
     body.pp footer section:nth-of-type(3) ul:nth-of-type(5) li:first-of-type {
@@ -1506,8 +1408,6 @@ body.pp footer section:nth-of-type(2) {
     }
 
     /* BESCHIKBAARHEID */
-
-
     body.pp footer section:nth-of-type(3) ul:nth-of-type(6) {
 
       display: flex;
@@ -1521,32 +1421,77 @@ body.pp footer section:nth-of-type(2) {
       max-width: 1.8em;
     }
 
+/* MEDIA QUERIES */
 
-    /* GRID */
+@media (max-width: 768px)  { 
 
-/* .gridcontainer {
+header div {
 
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  background-color: white;
+  transform: translatex();
+  left: 1em;;
+}
 
+header div ul {
+
+  position:fixed;
+  background-color: white;
+  padding:0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 3em;
+  transform: translatex(-100%);
+  transition: .5s ease;
+ 
+}
+
+header div ul.toonMenu {
+  /* jouw code hier */
+  transform: translatex(0);
+  transition: .5s ease;
+}
+
+header div ul li {
+
+
+  border-bottom: .1px #F8F8F8 solid;
+  padding: 1em 0em;
+  margin-left: 1em;
 
 }
 
-.gridcontainer:first-child {
-  grid-column-start:1;
-  grid-column-end:-1;
-} */
+header div ul li a {
 
-    /* Uitleg video of som 4 van oefening 1 */
-
-/* MEDIA QUERIES */
+  color: #999999;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0em .25em;
+  color:black;
+  
+  }
+  
+header div ul li:last-of-type a {
+  
+    color:#ff0000;
+  
+  }
+}
 
 /* SMALL SCREEN  */
-
 @media (min-width: 768px)  { 
 
-  /* EERSTE SECTION */
+  /* header */
+  header nav ul li:nth-of-type(2) {
+    order: -1 ;
+    min-width: 25%;
+  }
 
+  /* EERSTE SECTION */
   main section:nth-of-type(2) ul {
     /* CONTAINER  */
     display: grid;
@@ -1558,15 +1503,12 @@ body.pp footer section:nth-of-type(2) {
    
   }
 
-
   li.shophere {
 
     grid-column: 1 / 4;
   }
 
-
   /* SPECIAAL VOOR JOU GESELECTEERD */
-
   main section:nth-of-type(3) ul {
 
     /* GRID CONTAINER WANT FLEX LUISTERDE NIET  */
@@ -1582,7 +1524,6 @@ body.pp footer section:nth-of-type(2) {
   }
 
   /* Vierde section met merkcategorieen */ 
-
   main section:nth-of-type(4) ul:first-of-type {
 
     /* CONTAINER  */
@@ -1616,9 +1557,6 @@ main section:nth-of-type(5) ul {
   margin: 0em 0em 1em 0em;
 
 }
-
-
-
 /* --------------------------------- PRODUCTPAGINA --------------------------------- */
 
 /* gridcontainer */
@@ -1652,12 +1590,15 @@ body.pp main section:nth-of-type(4) {
 
 }
 
-
 /* subnav */
+nav button {
 
-body.pp header div {
+  visibility: hidden;
 
-  visibility: visible;
+}
+
+header div {
+
   background-color: white;
   width: 100%;
   height: 3em;
@@ -1667,61 +1608,62 @@ body.pp header div {
 
 }
 
-body.pp header div ul {
+header div ul {
 
   display: flex;
   justify-content: flex-start;
+  flex-wrap: nowrap;
   padding-left: 1em;
   width: 100%;
+  transform: translatex(0);
 
 }
 
+header div ul li {
 
-body.pp header div ul li a {
+  margin-right: 1%;
+
+}
+
+header div ul li a {
 
 color: #999999;
 font-weight: 700;
 text-transform: uppercase;
 text-decoration: none;
-font-size: 14px;
+font-size: 11px;
 margin: 0em .25em;
 
 }
 
-body.pp header div ul li:last-of-type a {
+header div ul li:last-of-type a {
 
   color:#ff0000;
 
 }
 
-body.pp main {
-
-  margin-top: 4.5em;
-}
-
-
 }
 
 /* MEDIUM SCREEN  */
-
 @media (min-width: 994px)  { 
 
+  header div ul li a {
 
+    color: #999999;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0em .25em;
+    
 
 /* --------------------------------- PRODUCTPAGINA --------------------------------- */
 
-
-
 }
 
 /* MEDIUM SCREEN  */
-
 @media (min-width: 1054px)  { 
 
-
-
   /* --------------------------------- PRODUCTPAGINA --------------------------------- */
-
-
 
 }

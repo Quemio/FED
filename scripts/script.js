@@ -1,5 +1,7 @@
 // // JavaScript Document
-// // oefening van codepen voor header:
+
+
+// // oefening van codepen voor hamburgermenu --> header: POGING 1
 
 // // variabele wordt gekoppeld aan de desbetreffende button
 // var deButton = document.querySelector("header nav button");
@@ -16,6 +18,7 @@
 
 // }
 
+// // oefening van codepen voor hamburgermenu --> header: POGING 2
 
 // // // variabele wordt gekoppeld aan de desbetreffende button
 // var deButton = document.querySelector("nav button");
@@ -31,11 +34,20 @@
 //   deNav.classList.toggle("toonMenu");
 // }
 
+// Tutorial van DLO: poging 1
+
+
+// button in de nav die het menu moet gaan openen en sluiten
 var deButton = document.querySelector("nav button");
+
+// het hamburgermenu
 var menu = document.querySelector("header div ul");
 
 deButton.addEventListener("click", function() {
     
-    menu.ClassList.toggle("toonMenu");
+    //via deze functie moet de class "toonMenu" het menu tevoorschijn halen.
+    menu.classList.toggle("toonMenu");
 
 } )
+
+// console geeft aan: "Uncaught TypeError: menu.ClassList is undefined"
