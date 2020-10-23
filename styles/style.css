@@ -183,7 +183,7 @@ main section:nth-of-type(3) ul {
 }
 
 /* list item breedte gegeven van 50% waardoor ze in combinatie met de flexwrap over 2 regels vallen */
-main section:nth-of-type(3) li {
+body main section:nth-of-type(3) li {
 
   flex-basis:50%;
   padding: .357em;
@@ -825,6 +825,44 @@ body.pp section:nth-of-type(2) button:first-of-type img {
   max-width: 10px;
 }
 
+/* DROPDOWN OPTIES */
+
+body.pp section:nth-of-type(2) ul:last-of-type {
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: solid .01px #E7E8E8;
+  text-align: left;
+  align-items: flex-start;
+  opacity: 0;
+  display: none;
+  
+
+}
+
+body.pp section:nth-of-type(2) ul.toonOpties {
+
+  transition: 1.33s;
+  opacity: 1;
+  display: block;
+ 
+} 
+
+body.pp section:nth-of-type(2) ul:last-of-type li {
+
+  font-size: 14px;
+  padding: .75em 1em;
+
+}
+
+body.pp section:nth-of-type(2) ul:last-of-type li a:hover {
+
+  color: #28a745;
+}
+
+
 /* CTA bestellen */
 body.pp section:nth-of-type(2) form button:first-of-type {
 
@@ -994,6 +1032,11 @@ body.pp section:nth-of-type(3) article li:first-of-type{
   letter-spacing: .5px;
   min-width: 200px;
 
+}
+
+body.pp section:nth-of-type(3) article li {
+
+  
 }
 
 /* SHARE ON WHATSAPP */
@@ -1449,7 +1492,7 @@ header div ul {
 }
 
 header div ul.toonMenu {
-  /* jouw code hier */
+  
   transform: translatex(0);
   transition: .5s ease;
 }
@@ -1492,7 +1535,7 @@ header div ul li:last-of-type a {
   }
 
   /* EERSTE SECTION */
-  main section:nth-of-type(2) ul {
+ body main section:nth-of-type(2) ul {
     /* CONTAINER  */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1503,10 +1546,13 @@ header div ul li:last-of-type a {
    
   }
 
+  
   li.shophere {
 
     grid-column: 1 / 4;
   }
+
+  
 
   /* SPECIAAL VOOR JOU GESELECTEERD */
   main section:nth-of-type(3) ul {

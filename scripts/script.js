@@ -51,3 +51,21 @@ deButton.addEventListener("click", function() {
 } )
 
 // console geeft aan: "Uncaught TypeError: menu.ClassList is undefined"
+
+
+
+// dropdown menu voor de maat
+// button die default maat weergeeft
+var dropdownButton = document.querySelector("body.pp section:nth-of-type(2) button:first-of-type");
+
+// de ul met daarin de beschikbare maten
+var optiesMaten = document.querySelector("body.pp section:nth-of-type(2) ul:last-of-type");
+
+//functie met toggle die de ul weergeeft/verbergt.
+dropdownButton.addEventListener("click", function() {
+
+    // console.log("geklikt");
+    
+    optiesMaten.classList.toggle("toonOpties")
+
+})
