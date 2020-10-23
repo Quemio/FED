@@ -3,6 +3,11 @@
   box-sizing:border-box;  
 }
 
+html {
+
+  min-width: 100%;
+}
+
 body {
 
   font-weight: 400;
@@ -11,6 +16,7 @@ body {
   background-color: #fff;
   font-family: 'Karla', sans-serif;
   height: 3000px;
+  width: 100vw;
   
 }
 
@@ -332,6 +338,7 @@ footer section:nth-of-type(1) ul {
   display: flex;
   background: none;
   height:30px;
+  flex-wrap: wrap;
   
 }
 
@@ -399,12 +406,12 @@ footer section:nth-of-type(2) form input {
 }
 
 footer section:nth-of-type(2) form button {
-  min-width: 150px;
+  min-width: 120px;
   margin: 0px;
   padding: 0px;
   height: 48px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.5px;
   color: black;
   letter-spacing: .5px;
@@ -820,14 +827,13 @@ body.pp section:nth-of-type(2) button:first-of-type {
   
 }
 
-body.pp section:nth-of-type(2) button:first-of-type img {
+body.pp main section:nth-of-type(2) button:first-of-type img {
 
   max-width: 10px;
 }
 
 /* DROPDOWN OPTIES */
-
-body.pp section:nth-of-type(2) ul:last-of-type {
+body.pp main section:nth-of-type(2) ul:last-of-type {
 
   background-color: white;
   display: flex;
@@ -842,7 +848,7 @@ body.pp section:nth-of-type(2) ul:last-of-type {
 
 }
 
-body.pp section:nth-of-type(2) ul.toonOpties {
+body.pp main section:nth-of-type(2) ul.toonOpties {
 
   transition: 1.33s;
   opacity: 1;
@@ -850,14 +856,14 @@ body.pp section:nth-of-type(2) ul.toonOpties {
  
 } 
 
-body.pp section:nth-of-type(2) ul:last-of-type li {
+body.pp main section:nth-of-type(2) ul:last-of-type li {
 
   font-size: 14px;
   padding: .75em 1em;
 
 }
 
-body.pp section:nth-of-type(2) ul:last-of-type li a:hover {
+body.pp main section:nth-of-type(2) ul:last-of-type li a:hover {
 
   color: #28a745;
 }
@@ -1166,8 +1172,7 @@ body.pp footer section:nth-of-type(2) {
     height:30px;
     padding: 2em 0em;
     width: 100%;
-    right: 0;
-
+    flex-wrap: wrap;
   }
   
   body.pp footer section:nth-of-type(2) ul li {
