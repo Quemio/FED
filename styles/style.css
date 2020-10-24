@@ -1,48 +1,49 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-html {
-
-  min-width: 100%;
+*::selection {
+  color:white;
+  background:#00a369;
+  height: 10px;
 }
+
 
 body {
-
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
-  font-family: 'Karla', sans-serif;
-  height: 3000px;
+  font-family: "Karla", sans-serif;
   width: 100vw;
-  
+}
+
+main {
+  margin: 0.5em;
 }
 
 img {
-
   max-width: 100%;
-
 }
 
 li {
-
   list-style: none;
-
 }
 
 /* HEADER */
- header nav {
+header nav {
   width: 100%;
   left: 0;
   top: 0;
-  top:0;
+  top: 0;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
   flex-grow: 1;
-  
 }
 
 header nav ul {
@@ -57,7 +58,6 @@ header nav ul {
   max-height: 50px;
   display: flex;
   justify-content: space-around;
-
 }
 
 /* logo */
@@ -65,30 +65,25 @@ header nav li:nth-of-type(2) {
   flex-grow: 1;
   min-width: 50%;
   justify-content: center;
-  
 }
 
 header nav li {
-  
   max-width: 6em;
   height: 50px;
   margin-left: 8px;
   margin-right: 8px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding: 0px;
-  
-} 
+}
 
 header nav a {
-
   width: auto;
   height: 24px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-
 }
 
 /* MENU */
@@ -103,52 +98,66 @@ header nav button {
   display: flex;
   align-items: center;
   max-width: 6em;
+}
 
+header nav button:hover {
+  transition: 0.2s ease;
+  transform: scale(1.3);
 }
 
 header nav img {
-
   padding: 2px;
-  height: 30px;
-  vertical-align: middle;
+  height: 1.5em;
+  min-height: 10px;
   display: flex;
+  flex-shrink: 0;
+}
 
+header nav img:hover {
+  transition: 0.2s ease;
+  transform: scale(1.3);
+}
+
+/* ZOEKBALK */
+header nav ul li:nth-of-type(3) {
+  display: none;
 }
 
 /* main */
+
+main section ul img:hover {
+  transition: 0.2s ease;
+  transform: scale(1.012);
+  box-shadow: 0px 1px 17px -8px #000000;
+  box-shadow: 0px 1px 17px -8px #000000;
+}
 /* bestel info */
 main section:first-child ul {
-
   display: flex;
   background: #f8f8f8;
   color: #999;
   flex-direction: row;
-  font-size:.50em;
+  font-size: 0.5em;
   font-weight: 400;
   text-transform: uppercase;
   align-items: center;
   justify-content: center;
-  padding: .5rem;
-  margin: .5rem;
- 
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 main section:first-child li {
-
-align-items: center;
-justify-content: center;
-margin-right: .5em;
-margin-left: .5em;
-
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 main section:first-child img {
-
-  padding: .1em;
+  padding: 0.1em;
   align-items: baseline;
   width: 1em;
   margin-right: 0.5em;
-
 }
 
 /* main images */
@@ -156,7 +165,6 @@ main section:first-child img {
 /* body main section:nth-child(2) ul { */
 
 body main section:nth-of-type(2) ul {
-
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -164,77 +172,67 @@ body main section:nth-of-type(2) ul {
   padding: 8px;
   /* align-items: center; */
   width: 100%;
-
 }
 
 /* Speciaal voor jou geselecteerd */
 /* Titel */
 h2 {
-
-    font-size: .875em;
-    font-weight: 700;
-    color: #212529;
-    text-transform: uppercase;
-    text-align: left;
-    margin-left: 15px;
-    margin-right: 15px;
-
+  font-size: 0.875em;
+  font-weight: 700;
+  color: #212529;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /* Container */
 main section:nth-of-type(3) ul {
-  display:flex;
-  flex-wrap:wrap;
-  padding: 0em .5em;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0em 0.5em;
 }
 
 /* list item breedte gegeven van 50% waardoor ze in combinatie met de flexwrap over 2 regels vallen */
 body main section:nth-of-type(3) li {
-
-  flex-basis:50%;
-  padding: .357em;
+  flex-basis: 50%;
+  padding: 0.357em;
   margin: 0em 0em 1em 0em;
 }
 
 main section:nth-of-type(3) a {
-
   text-decoration: none;
 }
 
 main section:nth-of-type(3) h3 {
-
-  margin: .357em 0em 0em;
+  margin: 0.357em 0em 0em;
   color: #000000;
   font-size: 1em;
 }
 
 main section:nth-of-type(3) p {
-  
   color: #000000;
-  font-size: .875em;
+  font-size: 0.875em;
   margin: 0px;
-
 }
 
 /* Vierde section met merkcategorieen */
-
 main section:nth-of-type(4) ul:first-of-type {
-
-      /* CONTAINER  */
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr auto; 
-      grid-row-gap: .4em;
-      grid-column-gap: .75em;
-      padding-left: 0px;
-
+  /* CONTAINER  */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-row-gap: 0.4em;
+  grid-column-gap: 0.75em;
+  padding-left: 0px;
+  margin: 0.5em;
 }
 
-main section:nth-of-type(4) ul li:first-of-type {
-
+body main section:nth-of-type(4) ul li:first-of-type {
   grid-column: 1 / 3;
 }
 
+/* GEKOZEN VOOR OPTIE MET GRID OMDAT IK DIT BETER WERKEND KREEG */
 /* eerste ul voor afbeelding over de breedte van het scherm */
 /* main section:nth-of-type(4) ul:first-of-type {
   display: flex;
@@ -269,13 +267,12 @@ main section:nth-of-type(5) {
 
 main section:nth-of-type(5) ul {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 main section:nth-of-type(5) li {
   margin: 1.5em 0em 0em 0em;
-  padding:0.5em;
-
+  padding: 0.5em;
 }
 
 main section:nth-of-type(5) a {
@@ -284,123 +281,103 @@ main section:nth-of-type(5) a {
 
 main section:nth-of-type(5) img {
   height: auto;
-  margin: .5em;
+  margin: 0.5em;
 }
 
 main section:nth-of-type(5) h4 {
-  font-size: 0.750em;
+  font-size: 0.75em;
   color: #999999;
   margin: 0em 0.5em;
-  padding:0;
+  padding: 0;
 }
 
 main section:nth-of-type(5) h3 {
   font-size: 1em;
   color: #000000;
   margin: 0em 0.5em;
-  padding:0;
+  padding: 0;
 }
 
 main section:nth-of-type(5) p {
   font-size: 0.875em;
   color: #212529;
   margin: 0em 0.5em;
-  padding:0;
+  padding: 0;
   height: 88px;
   margin-bottom: 1rem;
   font-weight: 100;
   letter-spacing: 0.5px;
-  
 }
 
 /* FOOTER */
 footer {
-
   padding: 1em 0em;
-
 }
 
 /* betaalmethoden / Section 1 */
 footer section:nth-of-type(1) {
-
-padding: 2em 1em;
-margin: 2em 1em;
+  padding: 2em 1em;
+  margin: 2em 1em;
 }
 
 footer section:nth-of-type(1) h2 {
-
   text-align: center;
-
 }
 
 footer section:nth-of-type(1) ul {
-
   display: flex;
   background: none;
-  height:30px;
+  height: 30px;
   flex-wrap: wrap;
-  
 }
 
 footer section:nth-of-type(1) li {
-
   flex-grow: 1;
   max-height: 30px;
-  padding:.5em;
-  margin:0px;
+  padding: 0.5em;
+  margin: 0px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   color: #00a369;
-
 }
 
 footer section:nth-of-type(1) img {
-
   min-height: 30px;
   max-width: 70px;
   width: auto;
-  padding:0px;
-  margin:0px;
-
+  padding: 0px;
+  margin: 0px;
 }
 
 /* NIEUWSBRIEF FORM */
 footer section:nth-of-type(2) {
-
-  background-color: #F8F8F8;
-  padding: .5em;
-
+  background-color: #f8f8f8;
+  padding: 0.5em;
 }
 
 footer section:nth-of-type(2) h2 {
-
-
   font-size: 1em;
   letter-spacing: 0.5px;
   padding: 0px;
   margin: 0.5em 0em;
-
 }
 
 footer section:nth-of-type(2) form {
-
   margin: 0.5em 0em;
   padding: 0.5em 0em;
   width: 90%;
   margin: 1em 0;
-  
 }
 
 footer section:nth-of-type(2) form input {
-
   width: 50%;
   max-height: 48px;
-  background-color:white;
+  background-color: white;
   border: none;
   margin: 0px;
-  padding: .75em 1em !important;
-  letter-spacing: .5px;
+  padding: 0.75em 1em !important;
+  letter-spacing: 0.5px;
   height: 48px;
   color: #999;
 }
@@ -414,324 +391,167 @@ footer section:nth-of-type(2) form button {
   font-size: 12px;
   letter-spacing: 0.5px;
   color: black;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: bold;
-  background-color:white;
-  border:none;
+  background-color: white;
+  border: none;
   cursor: pointer;
-
 }
 
 footer section:nth-of-type(2) form > p {
-
   margin: 0.5em 0em;
   padding: 0.5em 0em;
-  font-size: .75em;
-
+  font-size: 0.75em;
 }
 
 /* Lees ervaringen van een ander */
 footer section:nth-of-type(2) ul:first-of-type {
-
-display: flex;
-flex-direction: row;
-align-items: center;
-margin: 0px;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px;
 }
 
 footer section:nth-of-type(2) ul:first-of-type li {
-
   justify-content: flex-start;
-  padding: .2em;
-
+  padding: 0.2em;
 }
 
 footer section:nth-of-type(2) ul:first-of-type img {
-  
   min-height: 1.25em;
   max-width: 1.25em;
   width: auto;
-  padding:0px;
-  margin:0px;
-
+  padding: 0px;
+  margin: 0px;
 }
 
 footer section:nth-of-type(2) ul:first-of-type p {
-
-  margin: 0em .5em .4em 0em;
-
+  margin: 0em 0.5em 0.4em 0em;
 }
 
 footer section:nth-of-type(2) a:first-of-type {
-
   color: black;
   margin: 4px 0px 10px;
-  font-size:0.75em;
+  font-size: 0.75em;
 }
 
 footer div:first-of-type {
-
   width: 12em;
   height: auto;
   margin: 2em 0em;
-
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(3) {
-
   display: flex;
   flex-direction: row;
-  
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(3) li {
-  
   justify-content: flex-start;
   padding: 0em;
   align-items: center;
   margin: 0em;
   max-height: 40px;
   font-size: 1em;
-  
-
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(3) img {
-  
   max-height: 20px;
- 
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(3) h2 {
-  margin: 0px .5em;
+  margin: 0px 0.5em;
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(4) {
-
-  margin: .5em 0em;
+  margin: 0.5em 0em;
+  display: flex;
 }
 
 /* NEEM CONTACT OP */
 
 footer section:nth-of-type(2) ul:nth-of-type(5) {
-
   display: flex;
   flex-direction: row;
-
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(5) li {
-
   justify-content: flex-start;
   padding: 0em;
-  align-items:center;
+  align-items: center;
   margin: 0em;
   max-height: 20px;
   font-size: 1em;
-
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(5) img {
-  
   max-height: 20px;
- 
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(5) h2 {
-  margin: 0px .5em;
+  margin: 0px 0.5em;
 }
 
 /* OPTIES */
 
 footer table:first-of-type tr {
   margin: 0em 0em 1.125em;
-  
 }
 
 footer table:first-of-type img {
-
   max-height: 20px;
   align-items: center;
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(6) {
-
- display: flex;
- flex-direction: row;
- 
+  display: flex;
+  flex-direction: row;
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(6) li {
-
   justify-content: flex-start;
 }
 
 footer table:nth-of-type(2) td {
-
-  font-size:0.75em;
+  font-size: 0.75em;
   margin-right: 3em;
-  
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(6) {
-
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
   align-items: center;
-  
 }
 
 footer section:nth-of-type(2) ul:nth-of-type(6) li:first-of-type {
-
   max-width: 1.8em;
   height: 30px;
 }
 
 /* PRODUCTPAGINA */
 
-/* HEADER */
-/* body.pp header  {
-
+/* om de search icon weer tevoorschijn te halen, deze nam de normale styling niet aan */
+body.pp header nav ul li:nth-of-type(3) {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: .5em;
-  height: 50px;
-  position: sticky;
-  right: 0px;
-  top: 0px;
-  background-color: white;
-  font-family: 'Karla', sans-serif;
-
 }
-
-body.pp header nav {
-
-  width: 100%;
-  padding: .5em 0em;
-  position: sticky;
-  top: 0;
-
+/* om de 4e li-item weg te halen die alleen bij het medium scherm tevoorschijn moet komen */
+body.pp header nav ul li:nth-of-type(4) {
+  display: none;
 }
-
-body.pp header nav ul {
-
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  flex-grow: 4;
-  margin-top: .5em;
-  
-}
-
-body.pp header nav ul li {
-
-  max-width: 6em;
-  min-height: 20px;
-  max-height: 25px;
-  padding: 0px;
-  margin-left: 8px;
-  margin-right: 8px;
-
-}
-
-body.pp header nav button {
-
-background-color: white;
-border: none;
-height: 30px;
-width: 100px;
-padding: 0px;
-margin: 0px;
-top: 0px;
-display: flex;
-align-items: center;
-max-width: 6em;
-
-}
-
-body.pp header nav ul li:first-of-type {
-  
-  display: flex;
-  align-items: center;
-
-}
-
-body.pp header nav ul li:first-of-type img {
-
-  margin: 0px;
-
-}
-
-
-body.pp header nav ul li:first-of-type p {
-
-  margin: 0px;
-
-}
-
-body.pp header nav li:nth-of-type(2) {
-  flex-grow: 1;
-  min-width: 50%;
-  height: 30px;
-  justify-content: center;
-}
-
-body.pp header nav a {
-
-  display: block;
-  line-height: 3.5em;
-  text-align: center;
-
-}
-
-body.pp header nav img {
-
-    padding: 2px;
-    height: 25px;
-    vertical-align: middle;
-    display: flex;
-}
-
-body.pp header nav button {
-
-  background-color: white;
-  border: none;
-  height: 30px;
-  width: 100px;
-  padding: 0px;
-  margin: 0px;
-  top: 0px;
-  display: flex;
-  align-items: center;
-  max-width: 6em;
-  cursor:pointer;
-
-} */
 
 /* PRODUCTAFBEELDING */
 body.pp section:first-of-type img {
-  
- width: 100%;
- margin: 0px;
- padding: 0px;
-
-
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 body.pp section:first-of-type {
-  
- 
   width: 100%;
 }
 
 body.pp h5 {
-
   color: #00a369;
   font-size: 12px;
   font-weight: 400;
@@ -739,7 +559,6 @@ body.pp h5 {
 }
 
 body.pp h3:first-of-type {
-
   line-height: 1.2;
   color: inherit;
   font-weight: 100;
@@ -748,7 +567,7 @@ body.pp h3:first-of-type {
   margin-bottom: 1em;
   font-family: "Karla";
   text-transform: none;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   text-decoration: none;
 }
 
@@ -757,39 +576,7 @@ body.pp section:nth-of-type(2) a {
   color: #212529;
 }
 
-/* UPS's */
-/* body.pp section:nth-of-type(2) ul {
-
-  display: flex;
-  background-color: white;
-  justify-content: flex-start;
-  height: 20px;
-
-}
-
-body.pp section:nth-of-type(2) li {
-
-  align-items: center;
-
-
-}
-
-body.pp section:nth-of-type(2) li p {
-  color: #00a369;
-  min-width: 18em;
-  font-size: 1em;
-  padding: 0;
-}
-
-body.pp section:nth-of-type(2) li img {
-
-max-width: 1em;
-max-height: 1em;
-
-} */
-
 body.pp section:nth-of-type(2) ul {
-
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -798,21 +585,18 @@ body.pp section:nth-of-type(2) ul {
 }
 
 body.pp section:nth-of-type(2) li {
-
   height: auto;
   color: #00a369;
-  margin: 0em .25em;
-  font-size: .9em;
+  margin: 0em 0.25em;
+  font-size: 0.6em;
 }
 
 body.pp section:nth-of-type(2) li img {
-
-  max-height: 1em;
+  height: 1em;
 }
 
 /* MAATFORM */
 body.pp section:nth-of-type(2) button:first-of-type {
-
   background-color: white;
   padding: 10.5px 14px;
   display: flex;
@@ -820,68 +604,59 @@ body.pp section:nth-of-type(2) button:first-of-type {
   width: 100%;
   height: 50px;
   align-items: center;
-  border: solid .01px #E7E8E8;
+  border: solid 0.01px #e7e8e8;
   margin: 1em 0em;
   font-weight: 600;
   letter-spacing: 1px;
-  
 }
 
 body.pp main section:nth-of-type(2) button:first-of-type img {
-
   max-width: 10px;
 }
 
 /* DROPDOWN OPTIES */
-body.pp main section:nth-of-type(2) ul:last-of-type {
 
+body.pp main section:nth-of-type(2) ul:last-of-type {
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: left;
-  border: solid .01px #E7E8E8;
+  border: solid 0.01px #e7e8e8;
   text-align: left;
   align-items: flex-start;
   opacity: 0;
   display: none;
-  
-
 }
 
 body.pp main section:nth-of-type(2) ul.toonOpties {
-
   transition: 1.33s;
   opacity: 1;
   display: block;
- 
-} 
-
-body.pp main section:nth-of-type(2) ul:last-of-type li {
-
-  font-size: 14px;
-  padding: .75em 1em;
-
 }
 
-body.pp main section:nth-of-type(2) ul:last-of-type li a:hover {
+body.pp main section:nth-of-type(2) ul:last-of-type li {
+  font-size: 14px;
+  padding: 0.75em 1em;
+}
 
+body.pp section:nth-of-type(2) ul:last-of-type li a:hover {
   color: #28a745;
 }
 
+body.pp section:nth-of-type(2) ul:last-of-type li a:active {
+  color: #28a745;
+  font-weight: 900;
+}
 
 /* CTA bestellen */
 body.pp section:nth-of-type(2) form button:first-of-type {
-
-  background-color: #00a369
-
+  background-color: #00a369;
 }
 
 body.pp section:nth-of-type(2) form button:first-of-type img {
-
   max-width: 10px;
 }
 body.pp section:nth-of-type(2) form button:first-of-type p {
-
   color: white;
   text-transform: uppercase;
   font-size: 10px;
@@ -889,7 +664,6 @@ body.pp section:nth-of-type(2) form button:first-of-type p {
 
 /* WAT IS MIJN MAAT? */
 body.pp section:nth-of-type(2) form a {
-
   width: 100%;
   background-color: white;
   padding: 10.5px 14px;
@@ -898,14 +672,13 @@ body.pp section:nth-of-type(2) form a {
   width: 100%;
   height: 50px;
   align-items: center;
-  border: solid .01px #E7E8E8;
+  border: solid 0.01px #e7e8e8;
   margin: 1em 0em;
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
   color: #00a369;
   font-size: 14px;
-
 }
 
 /* ZET OP VERLANLIJST */
@@ -915,33 +688,31 @@ body.pp section:nth-of-type(3) ul {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  
 }
 
 body.pp section:nth-of-type(3) ul:first-of-type {
-
   text-transform: uppercase;
 }
 
 body.pp section:nth-of-type(3) li {
- 
   height: auto;
-  margin: 0px 5px ;
+  width: fit-content;
+  margin: 0px 5px;
+}
+
+body.pp section:nth-of-type(3) ul li:nth-of-type(2) {
+  flex-basis: auto;
 }
 
 body.pp section:nth-of-type(3) ul li:first-of-type {
-
   max-width: 2em;
 }
 
 body.pp section:nth-of-type(3) li img {
- 
   min-width: 1em;
-
 }
 
 body.pp section:nth-of-type(3) li p {
-  
   margin: 0px;
   font-size: 12.2px;
 }
@@ -949,127 +720,142 @@ body.pp section:nth-of-type(3) li p {
 /* PLAATS JE ORDER */
 
 body.pp section:nth-of-type(3) ul:nth-of-type(2) {
-
-display: flex;
-justify-content: flex-start;
-flex-direction: row;
-align-items: center;
-
-}
-
-body.pp section:nth-of-type(3) ul:nth-of-type(2) p {
-
-  min-width: 60%;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
 }
 
 body.pp section:nth-of-type(3) ul:nth-of-type(2) img {
-
   width: 10px;
-
 }
 
 /* OVER DIT PRODUCT */
 body.pp section:nth-of-type(3) ul:nth-of-type(3) {
-
-display: flex;
-justify-content: space-between;
-flex-direction: row;
-align-items: center;
-
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
 
 body.pp section:nth-of-type(3) ul:nth-of-type(3) img {
   max-width: 5px;
 }
 
-body.pp section:nth-of-type(3) ul:nth-of-type(3) li:first-of-type {
+/* BUTTONs */
+
+body.pp section:nth-of-type(3) article button:first-of-type {
+  background-color: white;
+  border: none;
+  width: 100%;
+}
+
+body.pp section:nth-of-type(3) article button:nth-of-type(2) {
+  background-color: white;
+  border: none;
+  width: 100%;
+}
+
+/* body.pp section:nth-of-type(3) ul:nth-of-type(3) li:first-of-type {
 
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .5px;
   min-width: 200px;
 
-}
+} */
 
 /* BESTELINFO PARAGRAAF */
-body.pp section:nth-of-type(3) article p {
-
+body.pp main section:nth-of-type(3) article p {
   margin: 0px 12px;
   color: #999999;
   font-weight: 200;
   font-size: 12px;
+  display: block;
 }
 
-body.pp section:nth-of-type(3) article ul {
-
- display: flex;
- justify-content: space-between;
- align-items: center;
- flex-direction: row;
- margin: 1em 0em;
-
+body.pp main section:nth-of-type(3) article p.toonOpties {
+  display: none;
 }
 
-body.pp section:nth-of-type(3) article ul img {
+body.pp main section:nth-of-type(3) article p:nth-of-type(2) {
+  display: none;
+}
+
+body.pp main section:nth-of-type(3) article p:nth-of-type(2).verzendOpties {
+  display: block;
+}
+
+body.pp main section:nth-of-type(3) article ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 1em 0em;
+}
+
+body.pp main section:nth-of-type(3) article ul img {
   max-width: 5px;
 }
 
 /* VERZENDEN EN RETOURNEREN */
 body.pp section:nth-of-type(3) article ul:nth-of-type(2) {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
- 
 }
 
 body.pp section:nth-of-type(3) article ul h4 {
-
   margin: 0;
   min-width: 250px;
   font-size: 14px;
+  text-align: left;
+  font-weight: 600;
 }
 
-body.pp section:nth-of-type(3) article li:first-of-type{
-
+body.pp section:nth-of-type(3) article li:first-of-type {
   text-transform: uppercase;
   font-style: normal;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   min-width: 200px;
-
-}
-
-body.pp section:nth-of-type(3) article li {
-
-  
 }
 
 /* SHARE ON WHATSAPP */
 body.pp section:nth-of-type(3) article a {
-
   display: flex;
   justify-content: center;
-  border: solid .1px #999999;
-  margin: 12px;
+  border: solid 0.1px #999999;
+  margin: 2em 1em;
   padding: 6px;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
+}
 
+body.pp section:nth-of-type(3) article a:hover {
+  transition: 0.2s ease;
+  transform: scale(1.01);
+  color: white;
+  background-color: #00a369;
+  border: none;
+}
+
+body.pp section:nth-of-type(3) article a:active {
+  transition: 0.2s ease;
+  transform: scale(1.01);
+  color: white;
+  background-color: #00a369;
+  border: 2px;
 }
 
 body.pp section:nth-of-type(3) h2 {
-
   margin-top: 1em 0em;
-
 }
 
 body.pp section:nth-of-type(3) h3 {
-
-  margin: .357em 0em 0em;
+  margin: 0.357em 0em 0em;
   color: #000000;
   font-size: 1em;
   font-weight: 800;
@@ -1077,644 +863,602 @@ body.pp section:nth-of-type(3) h3 {
 
 /* ANDERE KLANTEN BEKEKEN OOK
 /* Container */
-body.pp section:nth-of-type(4) ul {
-  
-  display:flex;
+body.pp main section:nth-of-type(4) ul {
+  display: flex;
   flex-wrap: wrap;
-  padding: 0em .5em;
+  padding: 0em 0.5em;
 }
 
 /* list item breedte gegeven van 50% waardoor ze in combinatie met de flexwrap over 2 regels vallen */
-body.pp section:nth-of-type(4) ul:first-of-type li {
-  flex-basis:50%;
-  padding: .357em;
-  margin: 0em 0em 1em 0em;
+body.pp main section:nth-of-type(4) ul:first-of-type li {
+  flex-basis: 47%;
+  padding: 0.357em;
+  margin: 0em 0em 0.5em 0em;
   max-width: 350px;
 }
 
-body.pp section:nth-of-type(4) a {
+body.pp main section:nth-of-type(4) a {
   text-decoration: none;
 }
 
-body.pp section:nth-of-type(4) h3 {
-  margin: .357em 0em 0em;
+body.pp main section:nth-of-type(4) h3 {
+  margin: 0.357em 0em 0em;
   color: #000000;
   font-size: 1em;
 }
 
-body.pp section:nth-of-type(4) p {
-  
+body.pp main section:nth-of-type(4) p {
   color: #000000;
-  font-size: .875em;
+  font-size: 0.875em;
   margin: 0px;
-
-} 
+}
 
 /* FOOTER */
 body.pp footer {
-
   margin: 0px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 /* BREADCRUMB */
 body.pp footer section {
-
   width: 100%;
   margin: 2em 0em;
   padding: 0px;
 }
 
 body.pp footer section:first-of-type ol {
-
-display: flex;
-justify-content: start;
-align-items: baseline;
-flex-wrap: wrap;
-width: 100%;
-margin: 0px;
-padding: 10px;
-font-size: 12px;
-
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  font-size: 12px;
 }
 
 body.pp footer section:first-of-type li {
-
-justify-content: left;
-width: auto;
-flex-wrap: wrap;
-
+  justify-content: left;
+  width: auto;
+  flex-wrap: wrap;
 }
 
 body.pp footer section:first-of-type li a {
-
   text-align: left;
 }
 
-
 /* BETAALMETHODE */
 body.pp footer section:nth-of-type(2) {
-
   width: 100%;
-  }
-  
-  body.pp footer section:nth-of-type(2) h2 {
-  
-    text-align: center;
-    padding: 1em;
-  
-  }
-  
-  body.pp footer section:nth-of-type(2) ul {
-  
-    display: flex;
-    background: none;
-    height:30px;
-    padding: 2em 0em;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  
-  body.pp footer section:nth-of-type(2) ul li {
-  
-    flex-grow: 1;
-    max-height: 30px;
-    padding: .5em;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  
-  body.pp footer section:nth-of-type(2) img {
-  
-    min-height: 30px;
-    max-width: 40px;
-    width: auto;
-    padding:0px;
-    margin:0px;
-
-  }
-
-  /*  NIEUWSBRIEF */
-  body.pp footer section:nth-of-type(3) {
-
-    background-color: #F8F8F8;
-    padding: .5em;
-
-  }
-  
-  body.pp footer section:nth-of-type(3) h2 {
-  
-    font-size: 1em;
-    letter-spacing: 0.5px;
-    padding: 0px;
-    margin: 0.5em 0em;
-  
-  }
-  
-  body.pp footer section:nth-of-type(3) form {
-  
-    margin: 0.5em 0em;
-    padding: 0.5em 0em;
-   
-  }
-
-  body.pp footer section:nth-of-type(3) form input {
-  
-    min-width: 150px;
-    min-height: 60px;
-    background-color:white;
-    border: none;
-    margin: 0px;
-    padding: 5px;
-    height: 48px;
-    color: #999;
-    
-  }
-  
-  body.pp footer section:nth-of-type(3) form input:nth-of-type(2) {
-    max-width: 150px;
-    margin: 0px;
-    padding: 0px;
-    height: 48px;
-    text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: 0.5px;
-    color: black;
-    letter-spacing: .5px;
-    font-weight: bold;
-  
-  }
-  
-  body.pp footer section:nth-of-type(3) form p {
-  
-    margin: 0.5em 0em;
-    padding: 0.5em 0em;
-    font-size: .75em;
-  
-  }
-
-  /* LEES ERVARINGEN VAN ANDERE */
-
-  body.pp footer section:nth-of-type(3) ul:first-of-type {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0px;
-    
-    }
-    
-    body.pp footer section:nth-of-type(3) ul:first-of-type li {
-    
-    
-      justify-content: flex-start;
-      padding: .2em;
-      max-width: 30px;
-      
-    }
-    
-    body.pp footer section:nth-of-type(3) ul:first-of-type img {
-      
-      min-height: 1.25em;
-      max-width: 1.25em;
-      width: auto;
-      padding:0px;
-      margin:0px;
-
-    }
-    
-    body.ppfooter section:nth-of-type(3) ul:first-of-type p {
-    
-      margin: 0em .5em .4em 0em;
-    
-    }
-    
-    body.pp footer section:nth-of-type(3) a:first-of-type {
-    
-      color: black;
-      margin: 4px 0px 10px;
-      font-size:0.75em;
-    }
-    
-    body.pp footer div:first-of-type {
-    
-      width: 12em;
-      height: auto;
-      margin: 2em 0em;
-    }
-    
-    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) {
-    
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: row;
-    
-    }
-    
-    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) li {
-      
-      justify-content: flex-start;
-      padding: 0em;
-      align-items: center;
-      margin: 0em;
-      max-height: 40px;
-      font-size: 1em;
-      
-    }
-    
-    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) img {
-      
-      max-height: 20px;
-     
-    }
-    
-    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) h2 {
-
-      margin: 0px .5em;
-    }
-
-      body.pp footer section:nth-of-type(3) ul:nth-of-type(4) {
-    
-      margin: .5em 0em;
-
-    }
-    
-    /* NEEM CONTACT OP */
-    footer section:nth-of-type(2) ul:nth-of-type(5) {
-    
-      display: flex;
-      flex-direction: row;
-
-    }
-    
-    footer section:nth-of-type(2) ul:nth-of-type(5) li {
-    
-      justify-content: flex-start;
-      padding: 0em;
-      align-items:center;
-      margin: 0em;
-      max-height: 20px;
-      font-size: 1em;
-    
-    }
-    
-    footer section:nth-of-type(2) ul:nth-of-type(5) img {
-      
-      max-height: 20px;
-     
-    }
-    
-    footer section:nth-of-type(2) ul:nth-of-type(5) h2 {
-      margin: 0px .5em;
-    }
-    
-    /* OPTIES */
-    footer table:first-of-type tr {
-
-      margin: 0em 0em 1.125em;
-      
-    }
-    
-    footer table:first-of-type img {
-    
-      max-height: 20px;
-      align-items: center;
-    }
-    
-    footer section:nth-of-type(2) ul:nth-of-type(6) {
-    
-     display: flex;
-     flex-direction: row;
-     
-    }
-    
-    footer section:nth-of-type(2) ul:nth-of-type(6) li {
-    
-      justify-content: flex-start;
-
-    }
-    
-    footer table:nth-of-type(2) td {
-    
-      font-size:0.75em;
-      margin-right: 1em;
-      
-    }
-
-    body.pp footer section:nth-child(3) ul {
-
-      display: flex;
-      flex-direction: column;
-      padding: 8px;
-    
-    }
-
-    body.pp footer a {
-
-      text-decoration: underline;
-
-    }
-
-    body.pp footer section:nth-child(3) ul li {
-
-      margin: 0;
-      margin-top: .4em;
-    }
-
-    /* KLANTENSERVICE titel*/
-    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) {
-
-      display: flex;
-      justify-content: flex-start;
-
-    }
-
-    body.pp footer section:nth-of-type(3) ul:nth-of-type(3) li:first-of-type {
-
-      max-width: 1.3em;
-
-    }
-
-     /* NEEM CONTACT OP titel*/
-     body.pp footer section:nth-of-type(3) ul:nth-of-type(5) {
-
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: row;
-      align-items: center;
-
-    }
-
-    body.pp footer section:nth-of-type(3) ul:nth-of-type(5) li:first-of-type {
-
-      max-width: 1.8em;
-
-    }
-
-    /* BESCHIKBAARHEID */
-    body.pp footer section:nth-of-type(3) ul:nth-of-type(6) {
-
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: row;
-      align-items: center;
-    }
-
-    body.pp footer section:nth-of-type(3) ul:nth-of-type(6) li:first-of-type {
-
-      max-width: 1.8em;
-    }
-
-/* MEDIA QUERIES */
-
-@media (max-width: 768px)  { 
-
-header div {
-
-  background-color: white;
-  transform: translatex();
-  left: 1em;;
 }
 
-header div ul {
+body.pp footer section:nth-of-type(2) h2 {
+  text-align: center;
+  padding: 1em;
+}
 
-  position:fixed;
-  background-color: white;
-  padding:0;
-  margin: 0;
-  left: 0;
+body.pp footer section:nth-of-type(2) ul {
+  display: flex;
+  background: none;
+  height: 30px;
+  padding: 2em 0em;
+  width: 100%;
   right: 0;
-  width: 100vw;
-  height: 100vh;
-  top: 3em;
-  transform: translatex(-100%);
-  transition: .5s ease;
- 
 }
 
-header div ul.toonMenu {
-  
-  transform: translatex(0);
-  transition: .5s ease;
-}
-
-header div ul li {
-
-
-  border-bottom: .1px #F8F8F8 solid;
-  padding: 1em 0em;
-  margin-left: 1em;
-
-}
-
-header div ul li a {
-
-  color: #999999;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  margin: 0em .25em;
-  color:black;
-  
-  }
-  
-header div ul li:last-of-type a {
-  
-    color:#ff0000;
-  
-  }
-}
-
-/* SMALL SCREEN  */
-@media (min-width: 768px)  { 
-
-  /* header */
-  header nav ul li:nth-of-type(2) {
-    order: -1 ;
-    min-width: 25%;
-  }
-
-  /* EERSTE SECTION */
- body main section:nth-of-type(2) ul {
-    /* CONTAINER  */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* HEIGHT TWEEDE RIJ STAAT OP AUTO */
-    grid-template-rows: 1fr auto; 
-    grid-row-gap: .4em;
-    grid-column-gap: .75em;
-   
-  }
-
-  
-  li.shophere {
-
-    grid-column: 1 / 4;
-  }
-
-  
-
-  /* SPECIAAL VOOR JOU GESELECTEERD */
-  main section:nth-of-type(3) ul {
-
-    /* GRID CONTAINER WANT FLEX LUISTERDE NIET  */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    padding: 0em .5em;
-  }
-
-  main section:nth-of-type(3) li {
-    padding: .357em;
-    margin: 0em 0em 1em 0em;
-  }
-
-  /* Vierde section met merkcategorieen */ 
-  main section:nth-of-type(4) ul:first-of-type {
-
-    /* CONTAINER  */
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr auto; 
-    grid-row-gap: .4em;
-    grid-column-gap: .75em;
-    padding-left: 0px;
-
-}
-
-main section:nth-of-type(4) ul li:first-of-type {
-
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-}
-
-main section:nth-of-type(5) ul {
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  padding: 0em .5em;
-
-}
-
-main section:nth-of-type(5) ul {
-
-  padding: .357em;
-  margin: 0em 0em 1em 0em;
-
-}
-/* --------------------------------- PRODUCTPAGINA --------------------------------- */
-
-/* gridcontainer */
-body.pp main {
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr; 
-  grid-row-gap: .4em;
-  grid-column-gap: .75em;
-  padding-left: 0px;
-
-}
-
-body.pp main section:nth-of-type(4) ul:first-of-type {
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* HEIGHT TWEEDE RIJ STAAT OP AUTO */
-  grid-template-rows: 1fr auto; 
-  grid-row-gap: .4em;
-  grid-column-gap: .75em;
-
-}
-
-body.pp main section:nth-of-type(4) {
-
-  grid-column-start: 1;
-  grid-column-end: 4;
-  margin: 1em 0em 0em 0em;
-
-}
-
-/* subnav */
-nav button {
-
-  visibility: hidden;
-
-}
-
-header div {
-
-  background-color: white;
-  width: 100%;
-  height: 3em;
-  border-bottom: .1px #F8F8F8 solid;
-  border-top: .1px #F8F8F8 solid;
+body.pp footer section:nth-of-type(2) ul li {
+  flex-grow: 1;
+  max-height: 30px;
+  padding: 0.5em;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-
 }
 
-header div ul {
+body.pp footer section:nth-of-type(2) img {
+  min-height: 30px;
+  max-width: 40px;
+  width: auto;
+  padding: 0px;
+  margin: 0px;
+}
 
+/*  NIEUWSBRIEF */
+body.pp footer section:nth-of-type(3) {
+  background-color: #f8f8f8;
+  padding: 0.5em;
+}
+
+body.pp footer section:nth-of-type(3) h2 {
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  padding: 0px;
+  margin: 0.5em 0em;
+}
+
+body.pp footer section:nth-of-type(3) form {
+  margin: 0.5em 0em;
+  padding: 0.5em 0em;
+}
+
+body.pp footer section:nth-of-type(3) form input {
+  min-width: 150px;
+  min-height: 60px;
+  background-color: white;
+  border: none;
+  margin: 0px;
+  padding: 5px;
+  height: 48px;
+  color: #999;
+}
+
+body.pp footer section:nth-of-type(3) form input:nth-of-type(2) {
+  max-width: 150px;
+  margin: 0px;
+  padding: 0px;
+  height: 48px;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: black;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+body.pp footer section:nth-of-type(3) form p {
+  margin: 0.5em 0em;
+  padding: 0.5em 0em;
+  font-size: 0.75em;
+}
+
+/* LEES ERVARINGEN VAN ANDERE */
+
+body.pp footer section:nth-of-type(3) ul:first-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+}
+
+body.pp footer section:nth-of-type(3) ul:first-of-type li {
+  justify-content: flex-start;
+  padding: 0.2em;
+  max-width: 30px;
+}
+
+body.pp footer section:nth-of-type(3) ul:first-of-type img {
+  min-height: 1.25em;
+  max-width: 1.25em;
+  width: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+body.ppfooter section:nth-of-type(3) ul:first-of-type p {
+  margin: 0em 0.5em 0.4em 0em;
+}
+
+body.pp footer section:nth-of-type(3) a:first-of-type {
+  color: black;
+  margin: 4px 0px 10px;
+  font-size: 0.75em;
+}
+
+body.pp footer div:first-of-type {
+  width: 12em;
+  height: auto;
+  margin: 2em 0em;
+}
+
+body.pp footer section:nth-of-type(3) ul:nth-of-type(3) {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: nowrap;
-  padding-left: 1em;
-  width: 100%;
-  transform: translatex(0);
-
+  flex-direction: row;
 }
 
-header div ul li {
-
-  margin-right: 1%;
-
+body.pp footer section:nth-of-type(3) ul:nth-of-type(3) li {
+  justify-content: flex-start;
+  padding: 0em;
+  align-items: center;
+  margin: 0em;
+  max-height: 40px;
+  font-size: 1em;
 }
 
-header div ul li a {
-
-color: #999999;
-font-weight: 700;
-text-transform: uppercase;
-text-decoration: none;
-font-size: 11px;
-margin: 0em .25em;
-
+body.pp footer section:nth-of-type(3) ul:nth-of-type(3) img {
+  max-height: 20px;
 }
 
-header div ul li:last-of-type a {
+/* body.pp footer section:nth-of-type(3) ul:nth-of-type(3) h2 {
 
-  color:#ff0000;
+      margin: 0px .5em;
+    } */
 
+body.pp footer section:nth-of-type(3) ul:nth-of-type(4) {
+  margin: 0.5em 0em;
 }
 
+/* NEEM CONTACT OP */
+footer section:nth-of-type(2) ul:nth-of-type(5) {
+  display: flex;
+  flex-direction: row;
 }
 
-/* MEDIUM SCREEN  */
-@media (min-width: 994px)  { 
+footer section:nth-of-type(2) ul:nth-of-type(5) li {
+  justify-content: flex-start;
+  padding: 0em;
+  align-items: center;
+  margin: 0em;
+  max-height: 20px;
+  font-size: 1em;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(5) img {
+  max-height: 20px;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(5) h2 {
+  margin: 0px 0.5em;
+}
+
+/* OPTIES */
+footer table:first-of-type tr {
+  margin: 0em 0em 1.125em;
+}
+
+footer table:first-of-type img {
+  max-height: 20px;
+  align-items: center;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(6) {
+  display: flex;
+  flex-direction: row;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(6) li {
+  justify-content: flex-start;
+}
+
+footer table:nth-of-type(2) td {
+  font-size: 0.75em;
+  margin-right: 1em;
+  min-width: 30%;
+}
+
+body.pp footer section:nth-child(3) ul {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+body.pp footer a {
+  text-decoration: underline;
+}
+
+body.pp footer section:nth-child(3) ul li {
+  margin: 0;
+  margin-top: 0.4em;
+}
+
+/* KLANTENSERVICE titel*/
+body.pp footer section:nth-of-type(3) ul:nth-of-type(3) {
+  display: flex;
+  justify-content: flex-start;
+}
+
+body.pp footer section:nth-of-type(3) ul:nth-of-type(3) li:first-of-type {
+  width: 100px;
+}
+
+/* NEEM CONTACT OP titel*/
+body.pp footer section:nth-of-type(3) ul:nth-of-type(5) {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+body.pp footer section:nth-of-type(3) ul:nth-of-type(5) li:first-of-type {
+  max-width: 1.8em;
+}
+
+/* BESCHIKBAARHEID */
+body.pp footer section:nth-of-type(3) ul:nth-of-type(6) {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+body.pp footer section:nth-of-type(3) ul:nth-of-type(6) li:first-of-type {
+  max-width: 1.8em;
+}
+
+/* MEDIA QUERIES */
+/* SMALL SCREEN  */
+@media (max-width: 768px) {
+  header div {
+    background-color: white;
+    transform: translatex();
+    left: 1em;
+  }
+
+  header div ul {
+    position: fixed;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    top: 3em;
+    transform: translatex(-100%);
+    transition: 0.5s ease;
+  }
+
+  header div ul.toonMenu {
+    transform: translatex(0);
+    transition: 0.5s ease;
+  }
+
+  header div ul li {
+    border-bottom: 0.1px #f8f8f8 solid;
+    padding: 1em 0em;
+    margin-left: 1em;
+  }
 
   header div ul li a {
-
     color: #999999;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
-    margin: 0em .25em;
-    
+    margin: 0em 0.25em;
+    color: black;
+  }
 
-/* --------------------------------- PRODUCTPAGINA --------------------------------- */
-
+  header div ul li:last-of-type a {
+    color: #ff0000;
+  }
 }
 
 /* MEDIUM SCREEN  */
-@media (min-width: 1054px)  { 
+@media (min-width: 768px) {
+  /* header */
+  header nav {
+    height: 50px;
+  }
 
+  body.pp header nav ul,
+  header nav ul {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* logo */
+  header nav ul li:nth-of-type(2),
+  body.pp header nav ul li:nth-of-type(2) {
+    order: -1;
+    min-width: 25%;
+    margin-left: 16px;
+  }
+
+  /* zoekbalk */
+  header nav ul li:nth-of-type(3),
+  header nav ul li:nth-of-type(3) button,
+  body.pp header nav ul li:nth-of-type(3),
+  body.pp header nav ul li:nth-of-type(3) button {
+    display: flex;
+    min-width: 40%;
+    color: black;
+  }
+
+  header nav ul li:nth-of-type(3),
+  body.pp header nav ul li:nth-of-type(3) {
+    border-left: 0.1px #f8f8f8 solid;
+    border-right: 0.1px #f8f8f8 solid;
+    max-width: 350px;
+  }
+
+  /* input */
+  header nav ul li:nth-of-type(3) input,
+  body.pp header nav ul li:nth-of-type(3) input {
+    width: 72.5%;
+    background-color: #ffffff;
+    color: #999999;
+    border: none;
+    letter-spacing: 0.5px;
+    font-size: 0.875em;
+    padding: 1em;
+    caret-color:#00a369;
+  }
+
+ 
+  header nav ul li:nth-of-type(3) input:focus {
+
+
+
+  }
+
+  header nav ul li:nth-of-type(3) input:active,
+  body.pp header nav ul li:nth-of-type(3) input:active {
+    border-color: none;
+  }
+  /* zoekbutton */
+  header nav ul li:nth-of-type(3) button,
+  body.pp header nav ul li:nth-of-type(3) button {
+    visibility: visible;
+    width: 25%;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 1em 0em;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+
+  header nav ul li:nth-of-type(3) button:hover,
+  body.pp header nav ul li:nth-of-type(3) button:hover {
+    transform: none;
+  }
+
+  /* search icon */
+  header nav ul li:nth-of-type(4),
+  body.pp header nav ul li:nth-of-type(4) {
+    display: none;
+  }
+
+  /* subnav */
+  nav button {
+    visibility: hidden;
+  }
+
+  header div {
+    background-color: white;
+    width: 100%;
+    height: 3em;
+    border-bottom: 0.1px #f8f8f8 solid;
+    border-top: 0.1px #f8f8f8 solid;
+    align-items: center;
+  }
+
+  header div ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding-left: 1em;
+    width: 100%;
+    transform: translatex(0);
+  }
+
+  header div ul li {
+    margin-right: 1%;
+  }
+
+  header div ul li a {
+    color: #999999;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 11px;
+    margin: 0em 0.25em;
+  }
+
+  header div ul li a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid;
+    color: #00a369;
+  }
+
+  header div ul li:last-of-type a {
+    color: #ff0000;
+  }
+
+  /* EERSTE SECTION */
+  body main section:nth-of-type(2) ul {
+    /* CONTAINER  */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* HEIGHT TWEEDE RIJ STAAT OP AUTO */
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 0.4em;
+    grid-column-gap: 0.75em;
+  }
+
+  li.shophere {
+    grid-column: 1 / 4;
+  }
+
+  /* SPECIAAL VOOR JOU GESELECTEERD */
+  main section:nth-of-type(3) ul {
+    /* GRID CONTAINER WANT FLEX LUISTERDE NIET  */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding: 0em 0.5em;
+  }
+
+  main section:nth-of-type(3) li {
+    padding: 0.357em;
+    margin: 0em 0em 1em 0em;
+  }
+
+  /* Vierde section met merkcategorieen */
+  main section:nth-of-type(4) ul:first-of-type {
+    /* CONTAINER  */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 0.4em;
+    grid-column-gap: 0.75em;
+    padding-left: 0px;
+  }
+
+  main section:nth-of-type(4) ul li:first-of-type {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  main section:nth-of-type(5) ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding: 0em 0.5em;
+  }
+
+  main section:nth-of-type(5) ul {
+    padding: 0.357em;
+    margin: 0em 0em 1em 0em;
+  }
+
+  body main section:nth-of-type(4) ul li:first-of-type {
+    grid-column: 1 / 2;
+  }
   /* --------------------------------- PRODUCTPAGINA --------------------------------- */
 
+  /* gridcontainer */
+  body.pp main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 0.4em;
+    grid-column-gap: 0.75em;
+    padding-left: 0px;
+    margin: 0.5em;
+  }
+
+  body.pp main section:nth-of-type(4) ul:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* HEIGHT TWEEDE RIJ STAAT OP AUTO */
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 0.4em;
+    grid-column-gap: 0.75em;
+  }
+
+  body.pp main section:nth-of-type(4) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 1em 0em 0em 0em;
+  }
 }
+
+/* MEDIUM SCREEN  */
+@media (min-width: 994px) {
+  header div ul li a {
+    color: #999999;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0em 0.25em;
+
+    /* --------------------------------- PRODUCTPAGINA --------------------------------- */
+  }
