@@ -1230,7 +1230,7 @@ body.pp footer section:nth-of-type(3) ul:nth-of-type(6) li:first-of-type {
 @media (min-width: 768px) {
   /* header */
   header nav {
-    height: 50px;
+    height: 100px;
   }
 
   body.pp header nav ul,
